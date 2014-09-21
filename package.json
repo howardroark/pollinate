@@ -1,0 +1,36 @@
+{
+  "name": "pollinate",
+  "description": "Pollinate files with data to create a fertilized seed!",
+  "version": "0.0.4",
+  "homepage": "https://github.com/codingcoop/pollinate",
+  "author": {
+    "name": "The Coding Cooperative",
+    "url": "http://codingcoop.org"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/codingcoop/pollinate.git"
+  },
+  "bugs": {
+    "url": "https://github.com/codingcoop/pollinate/issues"
+  },
+  "licenses": [
+    {
+      "type": "Unlicence",
+      "url": "https://github.com/codingcoop/pollinate/blob/master/LICENSE"
+    }
+  ],
+  "engines": {
+    "node": ">= 0.10"
+  },
+  "keywords": [
+    "command line"
+  ],
+  "dependencies": {
+    "commander": "2.3.x",
+    "duo-package": "0.4.x"
+  },
+  "bin": {
+    "pollinate": "pollinate.js"
+  }
+}
