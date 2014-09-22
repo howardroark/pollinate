@@ -73,7 +73,8 @@ also be supplied as a local file path for easier testing.
 #### The Pollen
 
 The Pollen is pretty much just a vessel to get the data to the Flower. Much like
-how pollen works in nature. It can also be supplied as a local file.
+how pollen works in nature. It can be supplied as an HTTP JSON endpoint or as a
+local file.
 
 #### The Data
 
