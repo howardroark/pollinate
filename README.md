@@ -150,7 +150,8 @@ pollinate codingcoop/meanstack https://details.io/1bdDlXc
   },
   "files": {
     "parse": [
-      "Vagrantfile"
+      "Vagrantfile",
+      "PROJECT-README"
     ]
   }
 }
@@ -168,15 +169,15 @@ pollinate codingcoop/meanstack https://details.io/1bdDlXc
   "files": {
     "cleanup": [
       "README.md"
-    ]
+    ],
     "parse": [
       "Vagrantfile",
       "PROJECT-README"
-    ]
+    ],
     move: [
      { "PROJECT-README": "README.md" }
      { "app": "codingcoop" }
-    ]
+    ],
   }
 }
 ```
