@@ -200,3 +200,16 @@ pollinate codingcoop/meanstack https://details.io/1bdDlXc
 ```
 
 #### Run `vagrant up` and you are done!
+
+## The Guts
+
+Pollinate is built on top of the following projects. Each project has been
+carefully chosen to ensure maintainability.
+
+#### Duo Pacakge
+
+#### Nunjucks
+
+#### Commander
+
+#### HJSON
