@@ -177,7 +177,7 @@ pollinate codingcoop/meanstack https://details.io/1bdDlXc
     move: [
      { "PROJECT-README": "README.md" }
      { "app": "codingcoop" }
-    ],
+    ]
   }
 }
 ```
