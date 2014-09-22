@@ -5,6 +5,20 @@ together they create a fertilized project seed. Pollinate aims to be a command
 line tool that allows you to combine files and data using a template engine and
 a set of file operations.
 
+In order to better understand the value of this endeavor, we will answer the
+three questions of [The Coder's Catechism](https://github.com/codingcoop/coders-catechism).
+
+### What existing ideas or patterns does this project build upon?
+
+### What problems will this project immediately solve?
+
+### What are the potential future uses of this project?
+
+
+
+
+
+
 ## The idea stage
 
 This project is inspired by earlier work on a project called
