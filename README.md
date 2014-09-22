@@ -198,3 +198,5 @@ pollinate codingcoop/meanstack https://details.io/1bdDlXc
    └── salt
    ...
 ```
+
+** `vagrant up` and you are done!
