@@ -199,4 +199,4 @@ pollinate codingcoop/meanstack https://details.io/1bdDlXc
    ...
 ```
 
-** `vagrant up` and you are done!
+** `vagrant up` and you are done! **
