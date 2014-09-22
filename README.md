@@ -1,81 +1,24 @@
 # Pollinate
 
 Think of a tree of files as a flower and a JSON endpoint as pollen; combined
-together they create a fertilized project. Pollinate will allow you to template a set of files and later act on them with an object of data.
+together they create a fertilized project. Pollinate will allow you to template 
+a set of files and store them on GitHub.  When you decide to use them later
+you can seed them with an object of data.
 
 In order to better understand the value of this endeavor, we will answer the
 three questions of [The Coder's Catechism](https://github.com/codingcoop/coders-catechism).
 
 ### What existing ideas or patterns does this project build upon?
 
+It is becoming increasingly popular to assemble templates that act as boilerplate
+of best practices for kicking off new projects.  This process ensures that patterns
+can emerge and win out over time.
+
 ### What problems will this project immediately solve?
 
 ### What are the potential future uses of this project?
 
 
-
-
-
-
-## The idea stage
-
-This project is inspired by earlier work on a project called
-[StackStrap](https://github.com/freesurface/stackstrap). It has became clear
-that this project is trying to be too many things and that the CLI can be it's
-own evolving piece. As of right now this project is little more than an idea
-and some scrappy code.
-
-If there is truly a role for this tool in the greater community it will mature.
-Early development will tap into the large and vibrant Node.js community, but
-as it matures it may make sense to rewite in something more low-level like GO.
-
-> **[Heilmeier's Catechism](http://en.wikipedia.org/wiki/George_H._Heilmeier#Heilmeier.27s_Catechism)**
-> A set of questions credited to Heilmeier that anyone proposing a research
-> project or product development effort should be able to answer.
-
-### What are you trying to do?
-
-Enable developers with a super simple way to template project setups and evolve
-them over time. Ensure that Git is a central part of the process and enable data
-to be supplied by a remote service. Seperation of files as a Git repository will
-allow people to focus on how they organize and operate different setups. Pairing
-the files with data as a remote service will enable people to create and evolve
-intuitive ways of kicking off projects. Ultimately the goal is to enable new
-developers to get off on the right foot with the aid of the greater community.
-
-#### The Flower
-
-Whether it's a `Vagrantfile`, `Gruntfile` or a `Salt` configurtion, everyone has
-an opinion. Patterns emerge all the the time in the open-source world, be it how
-projects are laid out or the combinations of tools to use. With the state of
-open-source virtualization and automation tools a full operational setup becomes
-little more than a set of files in a Git repository. The conversation becomes
-the nature of those files and how they all cooperate. It makes perfect sense to
-evolve these relationships in Git.
-
-#### The Pollen
-
-Be it a Git url, project name or domain, all of this data needs to find a way
-into project files when things kick off. Modern projects end up using a plethora
-of third party services which need configurtion within the files. As the list
-of data points grows it becomes less and less easy to just copy the last project
-worked on and clean it up for the next venture. Given that virtually all third
-party services like GitHub have APIs it only makes sense that you would end up
-building a UI to take care of setting up the details. This project wants to
-encourage that process.
-
-#### The Data
-
-Consider the data as the DNA. It should have the option of being supplied as
-both `YAML` for manual usage and `JSON` for more automated scenarios. It would
-be divided into information about how to organize the files when parsing and
-the content which would be handed to the template engine. The data would always
-be the common ground between the `Flower` and the `Pollen`. The `Flower` itself
-would have the option of supplying a `flower.json` or `flower.yml` file to
-provide defaults. For instance you many always want to ditch the repo's
-`README.md` to swap place with a `README-TEMPLATE.md` file which is parsed by
-the template engine. It also makes sense that certain data points be required,
-like a computer safe `name` value that can be used to name folders and users.
 
 #### Usage examples
 
@@ -150,32 +93,10 @@ with complex IDEs. Both groups of people need to be eased into utilizing the
 Linux eco-system. Pollinate aims to be easy to understand and therefore
 attractive to a larger audience.
 
-### Who cares?
 
-Advertising agencies, marketing agencies, Java shops, .NET shops... anything
-that kicked off during the dotcom boom and has not evolved much since.
-
-### If you're successful, what difference will it make?
-
-Catering to this massive group of developers will cause setups and workflows to
-start evolving at a much faster pace. People are inherently creative and a lot
-can be accomplished when the barriers are lowered. It also will encourage
-the narrtive surrounding open-source to find it's way into more organizations.
 
 ### What are the risks and the payoffs?
 
 No risks. The payoff would be an evolving eco-system of popular combinations of
 tools. The popular Node.js `MEANstack` is evidence that there is an appetite for
 these things.
-
-### How much will it cost?
-
-Zero!
-
-### How long will it take?
-
-Depends.
-
-### What are the midterm and final "exams" to check for success?
-
-If people actually use it, that is the success.
