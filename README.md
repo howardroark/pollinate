@@ -8,7 +8,7 @@ you can seed them with an object of data.
 In order to better understand the value of this endeavor, we will answer the
 three questions of [The Coder's Catechism](https://github.com/codingcoop/coders-catechism).
 
-### What pre-existing ideas does this project build upon?
+#### What pre-existing ideas does this project build upon?
 
 It is becoming increasingly popular to assemble templates that act as a
 boilerplate of best practices for kicking off new projects. This process ensures
@@ -24,7 +24,7 @@ built a lot like an application. It also requires the need to submit content to
 [NPM](https://www.npmjs.org/), rather than just living on GitHub. This is not
 always ideal for a fast pace of iteration.
 
-### What immediate benefits will this project offer today?
+#### What immediate benefits will this project offer today?
 
 Pollinate is designed to be a simple pattern that can be easily understood. It
 will allow you to treat your project templates much like you would HTML
@@ -40,7 +40,7 @@ endpoint allows you to tie together existing APIs so that kicking off projects
 can be a more streamlined process. Or you can just keep your data as a local
 file that you tweak each time, at least all the values are in one place.
 
-### What impacts could this project have down the road?
+#### What impacts could this project have down the road?
 
 Pollinate allows for services to be built which tie together the APIs of other
 services. It would easy to concieve of a service leveraged the GitHub API and
@@ -48,13 +48,51 @@ offered an interface to choose a template while filling out some important
 details. From there the service could run the Pollinate code and create the
 user a brand new repository with the output.
 
-#### An example
+## A Practical Example
 
 Suppose you have a Git repo with all your files laid out in the way you
 like to start off a new Node.js site.  In that template you have a few
 files where you want to fill in some details and a few files that you want
-to move around.
+to move around.  You build yourself a simple service that converts a form
+into a JSON object and offer it up via a unique hash.
 
 ```
 pollinate codingcoop/meanstack https://details.io/1bdDlXc
 ```
+
+## The Breakdown
+
+Ultimately Pollinate is broken down into three main components. The template
+which holds all of the files, the endpoint which supplies user configuration
+and the data which defines the outcome. Both the template and the endpoint can
+supply the data, but the data supplied by the endpoint holds precedence when
+merged.
+
+#### The Flower
+
+The Flower is a GitHub repository that holds all of the files.  Any file can
+contain template tags that will later be filled in with values. Pollinate uses
+[Nunjucks](http://mozilla.github.io/nunjucks/) as its template engine.
+Nunjucks is a JavaScript clone of [Jinja](http://jinja.pocoo.org/), which
+encourages templates to be sandboxed and easy to read. This ensures that the
+JSON schema is well designed and easy to understand. It also allows
+Pollinate to be attrative to people outside of the JavaScript community.
+The Flower has the option of supplying its own default data at the root of the
+template as JSON (flower.json) or [HJSON](http://laktak.github.io/hjson/)
+(flower.hjson), which is a more human editable superset of JSON. The Flower can
+also be supplied as a local file path for easier testing.
+
+#### The Pollen
+
+The Pollen is pretty much just a vessel to get the data to the Flower. Much like
+how pollen works in nature. It can also be supplied as a local file.
+
+#### The Data
+
+Consider the data to be more like the DNA of the operation. Both sides can
+supply it, but the data from the Pollen takes precedence when merging the
+objects. The data supplies a list of files to act upon with the template engine
+along with the data to inject. The data can also supply file operations to move
+or delete files during the process.
+
+
