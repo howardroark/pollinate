@@ -48,18 +48,6 @@ offered an interface to choose a template while filling out some important
 details. From there the service could run the Pollinate code and create the
 user a brand new repository with the output.
 
-## A Practical Example
-
-Suppose you have a Git repo with all your files laid out in the way you
-like to start off a new Node.js site.  In that template you have a few
-files where you want to fill in some details and a few files that you want
-to move around.  You build yourself a simple service that converts a form
-into a JSON object and offer it up via a unique hash.
-
-```
-pollinate codingcoop/meanstack https://details.io/1bdDlXc
-```
-
 ## The Breakdown
 
 Ultimately Pollinate is broken down into three main components. The template
@@ -95,4 +83,116 @@ objects. The data supplies a list of files to act upon with the template engine
 along with the data to inject. The data can also supply file operations to move
 or delete files during the process.
 
+## A Practical Example
 
+Suppose you have a Git repo with all your files laid out in the way you
+like to start off a new Node.js site.  In that template you have a few
+files where you want to fill in some details and a few files that you want
+to move around.  You build yourself a simple service that converts a form
+into a JSON object and offer it up via a unique hash.
+
+```
+pollinate codingcoop/meanstack https://details.io/1bdDlXc
+```
+
+##### The `Flower` repository
+
+```
+├── PROJECT-README
+├── README.md
+├── Vagrantfile
+├── app
+...
+├── bower.json
+├── gruntfile.js
+├── package.json
+├── public
+...
+├── salt
+...
+└── flower.hjson
+```
+
+##### The HJSON file within the `Flower`
+
+```
+{
+  details: {
+    # A computer safe name (always used to name the parent folder)
+    name: newproject
+    box_name: precise64
+    box_url: http://files.vagrantup.com/precise64.box
+  }
+  files: {
+    cleanup: [
+      README.md
+    ]
+    parse: [
+      PROJECT-README
+    ]
+    move: [
+     { PROJECT-README: README.md }
+     { app: {{details.name}} }
+    ]
+  }
+}
+```
+
+##### The JSON supplied by the `Pollen`
+
+```
+{
+  "data": {
+    "name": "codingcoop",
+    "box_name": "trusty64",
+    "box_url": "http://files.vagrantup.com/trusty64.box"
+  },
+  "files": {
+    "parse": [
+      "Vagrantfile"
+    ]
+  }
+}
+```
+
+##### The resulting JSON
+
+```
+{
+  "data": {
+    "name": "codingcoop",
+    "box_name": "trusty64",
+    "box_url": "http://files.vagrantup.com/trusty64.box"
+  },
+  "files": {
+    "cleanup": [
+      "README.md"
+    ]
+    "parse": [
+      "Vagrantfile",
+      "PROJECT-README"
+    ]
+    move: [
+     { "PROJECT-README": "README.md" }
+     { "app": "codingcoop" }
+    ]
+  }
+}
+```
+
+##### The resulting file tree
+
+```
+├── codingcoop
+   ├── README.md
+   ├── Vagrantfile
+   ├── codingcoop
+   ...
+   ├── bower.json
+   ├── gruntfile.js
+   ├── package.json
+   ├── public
+   ...
+   └── salt
+   ...
+```
