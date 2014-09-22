@@ -30,6 +30,7 @@
     "commander": "2.3.x",
     "duo-package": "0.4.x",
     "nunjucks": "1.0.x",
+    "xtend": "4.0.x",
     "hjson": "1.0.x"
   },
   "bin": {
