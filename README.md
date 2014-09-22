@@ -1,9 +1,7 @@
 # Pollinate
 
-Think of a set of files as a flower and a source of data as pollen; combined
-together they create a fertilized project seed. Pollinate aims to be a command
-line tool that allows you to combine files and data using a template engine and
-a set of file operations.
+Think of a tree of files as a flower and a JSON endpoint as pollen; combined
+together they create a fertilized project. Pollinate will allow you to template a set of files and later act on them with an object of data.
 
 In order to better understand the value of this endeavor, we will answer the
 three questions of [The Coder's Catechism](https://github.com/codingcoop/coders-catechism).
