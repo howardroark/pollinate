@@ -98,6 +98,7 @@ pollinate codingcoop/meanstack https://details.io/1bdDlXc
 ##### The `Flower` repository
 
 ```
+.
 ├── PROJECT-README
 ├── README.md
 ├── Vagrantfile
@@ -183,7 +184,8 @@ pollinate codingcoop/meanstack https://details.io/1bdDlXc
 ##### The resulting file tree
 
 ```
-├── codingcoop
+.
+└── codingcoop
    ├── README.md
    ├── Vagrantfile
    ├── codingcoop
