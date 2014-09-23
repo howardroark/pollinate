@@ -6,7 +6,7 @@ a set of files and store them on GitHub.  When you decide to use them later
 you can seed them with an object of data.
 
 - [The Why](#the-why)
-- [The Details](#the-details)
+- [The Overview](#the-overview)
 - [The Example](#the-example)
 - [The Guts](#the-guts)
 - [The Future](#the-future)
@@ -56,7 +56,7 @@ offered an interface to choose a template while filling out some important
 details. From there the service could run the Pollinate code and create the
 user a brand new repository with the output.
 
-## The Breakdown
+## The Overview
 
 Ultimately Pollinate is broken down into three main components. The template
 which holds all of the files, the endpoint which supplies user configuration
