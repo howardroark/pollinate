@@ -92,7 +92,7 @@ objects. The data supplies a list of files to act upon with the template engine
 along with the data to inject. The data can also supply file operations to move
 or delete files during the process.
 
-## A Practical Example
+## The Example
 
 Suppose you have a Git repo with all your files laid out in the way you
 like to start off a new Node.js site.  In that template you have a few
