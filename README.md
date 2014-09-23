@@ -25,8 +25,8 @@ achieving this goal is to distill a set of files that are then later copied and
 adjusted. At times this can be a tedious task and introduce unforseen
 complications.
 
-Amazing tools like [Yoeman](http://yeoman.io/) have emerged to help reduce
-these complications and allow for more customization. While Yoeman is powerful
+Amazing tools like [Yeoman](http://yeoman.io/) have emerged to help reduce
+these complications and allow for more customization. While Yeoman is powerful
 it requires that its [generators](http://yeoman.io/authoring/)(templates) be
 built a lot like an application. It also requires the need to submit content to
 [NPM](https://www.npmjs.org/), rather than just living on GitHub. This is not
