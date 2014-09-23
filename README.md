@@ -5,6 +5,14 @@ together they create a fertilized project. Pollinate will allow you to template
 a set of files and store them on GitHub.  When you decide to use them later
 you can seed them with an object of data.
 
+- [The Why](#the-why)
+- [The Breakdown](#the-breakdown)
+- [A Practical Example](#a-practical-example)
+- [The Guts](#the-guts)
+- [The Future](#the-future)
+
+## The Why
+
 In order to better understand the value of this endeavor, we will answer the
 three questions of [The Coder's Catechism](https://github.com/codingcoop/coders-catechism).
 
@@ -215,3 +223,5 @@ carefully chosen to ensure maintainability.
 #### Commander
 
 #### HJSON
+
+## The Future
