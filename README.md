@@ -6,8 +6,8 @@ a set of files and store them on GitHub.  When you decide to use them later
 you can seed them with an object of data.
 
 - [The Why](#the-why)
-- [The Breakdown](#the-breakdown)
-- [A Practical Example](#a-practical-example)
+- [The Details](#the-details)
+- [The Example](#the-example)
 - [The Guts](#the-guts)
 - [The Future](#the-future)
 
