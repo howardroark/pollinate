@@ -167,7 +167,7 @@ $ pollinate codingcoop/meanstack https://details.io/1bdDlXc
 }
 ```
 
-##### The resulting JSON
+##### The resulting JSON for execution
 
 ```
 {
@@ -185,14 +185,14 @@ $ pollinate codingcoop/meanstack https://details.io/1bdDlXc
       "PROJECT-README"
     ],
     move: [
-     { "PROJECT-README": "README.md" }
+     { "PROJECT-README": "README.md" },
      { "app": "codingcoop" }
     ]
   }
 }
 ```
 
-##### The resulting file tree
+##### The resulting file tree output
 
 ```
 .
