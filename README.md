@@ -6,7 +6,7 @@
 Think of a tree of files as a `Flower` and a JSON endpoint as `Pollen`; combined
 together they create a fertilized project. Pollinate will allow you to template
 a set of files and store them on GitHub.  When you decide to use them later
-you can seed them with an object of data.
+you can **pollinate** them with an object of data.
 
 - [The Why](#the-why)
 - [The Overview](#the-overview)
