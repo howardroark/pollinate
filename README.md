@@ -105,7 +105,7 @@ configured. The "master" service and the "minion" being configured both have
 the ability to help define the state, but the minion takes precedence.
 
 While this project does not mirror in anyway the mechanics of Salt, it does
-lean on the idea the an object of data is what should define your process.
+lean on the idea that an object of data is what should define your process.
 It is increasingly popular to build apps around the idea of well designed JSON
 schemas that enable easy to understand templates. Leveraging this way of
 looking at things is the core concept of Pollinate.
