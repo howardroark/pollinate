@@ -110,7 +110,7 @@ It is increasingly popular to build apps around the idea of well designed JSON
 schemas that enable easy to understand templates. Leveraging this way of
 looking at things is the core concept of Pollinate.
 
-This project is a continuation of the CLI tool for the project
+This project is an evolution of the CLI tool for the project
 [StackStrap](https://github.com/stackstrap) which combines Salt with Vagrant
 to make DevOps easier. Eventually Pollinate will phase the Python based CLI
 tool out so that StackStrap can focus on automation and the
