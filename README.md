@@ -225,9 +225,9 @@ $ pollinate codingcoop/meanstack https://details.io/1bdDlXc
 
 This project is heavily inspired by the design of the configuration tool
 [Salt](https://github.com/saltstack/salt). The core idea behind Salt is the
-process of building a "State" object which defines how the machine will be
+process of creating a "State" object which defines how the machine will be
 configured. The "master" service and the "minion" being configured both have
-the right to help define the state, but the minion takes precedence.
+the ability to help define the state, but the minion takes precedence.
 
 While this project does not mirror in anyway the mechanics of Salt, it does
 lean on the idea the an object of data is what should define your process.
