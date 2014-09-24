@@ -264,3 +264,13 @@ things like flattening arrays.  The creator @jonschlinkert has introduced
 countless quality open-source projects and cares deeply about them.
 
 ## The Future
+
+Node.js is by far the best medium to use if your goal is to cater to an
+audience that includes "front-end" and "back-end" developers. It ensures that
+you get feedback from a wide range of people to help shape the project into
+what it needs to be.  Eventually the pattern will be better distilled and it
+may make sense to rebuild in something like GO or Rust.  The ultimate goal of
+Pollinate is to be a pattern that systems can be built around.  If it can be
+made to run as efficiently as possible down the road... why not! It would
+likely involve porting all the "Parts" as well, but those patterns could
+surely benefit any other community.
