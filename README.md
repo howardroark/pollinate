@@ -10,8 +10,8 @@ you can **pollinate** them with an object of data.
 
 - [The Why](#the-why)
 - [The Overview](#the-overview)
-- [The Example](#the-example)
 - [The Inspiration](#the-inspiration)
+- [The Example](#the-example)
 - [The Parts](#the-parts)
 - [The Future](#the-future)
 
@@ -95,6 +95,26 @@ supply it, but the data from the `Pollen` takes precedence when merging the
 objects. The data supplies a list of files to act upon with the template engine
 along with the data to inject. The data can also supply file operations to move
 or delete files during the process.
+
+## The Inspiration
+
+This project is inspired by the the configuration management tool
+[Salt](https://github.com/saltstack/salt). The core idea behind Salt is the
+process of creating a "State" object which defines how the machine will be
+configured. The "master" service and the "minion" being configured both have
+the ability to help define the state, but the minion takes precedence.
+
+While this project does not mirror in anyway the mechanics of Salt, it does
+lean on the idea the an object of data is what should define your process.
+It is increasingly popular to build apps around the idea of well designed JSON
+schemas that enable easy to understand templates. Leveraging this way of
+looking at things is the core concept of Pollinate.
+
+This project is a continuation of the CLI tool for the project
+[StackStrap](https://github.com/stackstrap) which combines Salt with Vagrant
+to make DevOps easier. Eventually Pollinate will phase the Python based CLI
+tool out so that StackStrap can focus on automation and the
+[Salt States](https://github.com/stackstrap/stackstrap-salt) themselves.
 
 ## The Example
 
@@ -220,26 +240,6 @@ $ pollinate codingcoop/meanstack https://details.io/1bdDlXc
 ```
 
 #### Run `vagrant up` and you are done!
-
-## The Inspiration
-
-This project is inspired by the the configuration management tool
-[Salt](https://github.com/saltstack/salt). The core idea behind Salt is the
-process of creating a "State" object which defines how the machine will be
-configured. The "master" service and the "minion" being configured both have
-the ability to help define the state, but the minion takes precedence.
-
-While this project does not mirror in anyway the mechanics of Salt, it does
-lean on the idea the an object of data is what should define your process.
-It is increasingly popular to build apps around the idea of well designed JSON
-schemas that enable easy to understand templates. Leveraging this way of
-looking at things is the core concept of Pollinate.
-
-This project is a continuation of the CLI tool for the project
-[StackStrap](https://github.com/stackstrap) which combines Salt with Vagrant
-to make DevOps easier. Eventually Pollinate will phase the Python based CLI
-tool out so that StackStrap can focus on automation and the
-[Salt States](https://github.com/stackstrap/stackstrap-salt) themselves.
 
 ## The Parts
 
