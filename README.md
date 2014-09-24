@@ -153,12 +153,12 @@ $ pollinate codingcoop/meanstack https://details.io/1bdDlXc
 
 ```
 {
-  "data": {
+  "details": {
     "name": "codingcoop",
     "box_name": "trusty64",
     "box_url": "http://files.vagrantup.com/trusty64.box"
   },
-  "files": {
+  "operations": {
     "parse": [
       "Vagrantfile",
       "PROJECT-README"
