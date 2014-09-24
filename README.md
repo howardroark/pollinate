@@ -220,20 +220,46 @@ carefully chosen to ensure maintainability.
 
 [Duo](http://duojs.org) is a next generation package manager for the front-end.
 It is wonderful idea that focuses on using Git(Hub) as the source of packages.
+The community around this project is growing at an extremely fast rate and is
+offering a lot of promising advancements in browser based development.
+
 The creator has done an amazing job abstracting the package handler portion of
-the code. Pollinate plans to ride the progress of this code and ideally aid in
-its growth.
+the code. Pollinate plans to ride this wave and ideally help aid in its
+direction over time.
 
 #### Nunjucks ([github](https://github.com/mozilla/nunjucks))
 
-Nunjucks is a very promising projects that offers a bridge between the
+Nunjucks is a very promising project that offers a bridge between the
 JavaScript and Python communities.  It is heavily influenced by the extremely
 popular template engine [Jinja2](http://jinja.pocoo.org/). Jinja and Nunjucks
 both strive to offer a sandboxed template environment which encourages easy
-to digest templates and smart data schemas.
+to digest templates and smart data schemas. The project is backed by Mozilla
+and has an active community who understands the value of this project.
 
 #### Commander ([github](https://github.com/visionmedia/commander.js))
 
+Commander is super simple and smart API for rapidly prototyping command-line
+tools. The creator @visionmedia is clearly a savant when it comes to
+open-source and undertands exaclty what people are looking for.
+
 #### HJSON ([github](https://github.com/laktak/hjson-js))
+
+HJSON is a very new idea that makes a lot of sense.  JSON is a powerful tool
+for exchanging data between systems via HTTP.  It has become increasingly
+popular as a means of providing configuration objects in projects. The problem
+is that because JSON has been designed for compression, it can be tedious to
+edit by hand. An alternative like YAML tends not to play well with larger
+communities because it relies on whitespace to define data. HJSON offers an
+elegant middle ground and is a direct superset of JSON. It removes the need
+for commas and quotes and also allows for comments. The idea is surely to
+catch on.
+
+#### Mixin-Deep ([github](https://github.com/jonschlinkert/mixin-deep))
+
+Because pollinate allows for data to be provided by both sides of the equation
+it needs an elegant solution to combine objects. `mixin-deep` is a sane and
+simple approach to this process with does not fuddle things up by trying to do
+things like flattening arrays.  The creator @jonschlinkert has introduced
+countless quality open-source projects and cares deeply about them.
 
 ## The Future
