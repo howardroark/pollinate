@@ -79,8 +79,10 @@ encourages templates to be sandboxed and easy to read. It also allows
 Pollinate to be attrative to people outside of the JavaScript community.
 The `Flower` has the option of supplying its own default data at the root of the
 template as JSON (flower.json) or [HJSON](http://laktak.github.io/hjson/)
-(flower.hjson), which is a more human editable superset of JSON. The `Flower`
-can also be supplied as a local file path for easier testing.
+(flower.hjson), which is a more human editable superset of JSON. Pollinate opts
+not to use YAML because the core audience is likely not to use languages that
+rely on whitespace. The `Flower` can also be supplied as a local file path for
+easier testing.
 
 #### The `Pollen`
 
