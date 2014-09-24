@@ -1,6 +1,6 @@
 # Pollinate
 
-Think of a tree of files as a flower and a JSON endpoint as pollen; combined
+Think of a tree of files as a `Flower` and a JSON endpoint as `Pollen`; combined
 together they create a fertilized project. Pollinate will allow you to template
 a set of files and store them on GitHub.  When you decide to use them later
 you can seed them with an object of data.
@@ -64,30 +64,30 @@ and the data which defines the outcome. Both the template and the endpoint can
 supply the data, but the data supplied by the endpoint holds precedence when
 merged.
 
-#### The Flower
+#### The `Flower`
 
-The Flower is a GitHub repository that holds all of the files.  Any file can
+The `Flower` is a GitHub repository that holds all of the files.  Any file can
 contain template tags that will later be filled in with values. Pollinate uses
 [Nunjucks](http://mozilla.github.io/nunjucks/) as its template engine.
 Nunjucks is a JavaScript clone of [Jinja](http://jinja.pocoo.org/), which
 encourages templates to be sandboxed and easy to read. This ensures that the
 JSON schema is well designed and easy to understand. It also allows
 Pollinate to be attrative to people outside of the JavaScript community.
-The Flower has the option of supplying its own default data at the root of the
+The `Flower` has the option of supplying its own default data at the root of the
 template as JSON (flower.json) or [HJSON](http://laktak.github.io/hjson/)
-(flower.hjson), which is a more human editable superset of JSON. The Flower can
-also be supplied as a local file path for easier testing.
+(flower.hjson), which is a more human editable superset of JSON. The `Flower`
+can also be supplied as a local file path for easier testing.
 
-#### The Pollen
+#### The `Pollen`
 
-The Pollen is pretty much just a vessel to get the data to the Flower. Much like
-how pollen works in nature. It can be supplied as an HTTP JSON endpoint or as a
-local file.
+The `Pollen` is pretty much just a vessel to get the data to the `Flower`. Much
+like how pollen works in nature. It can be supplied as an HTTP JSON endpoint or
+as a local file.
 
 #### The Data
 
 Consider the data to be more like the DNA of the operation. Both sides can
-supply it, but the data from the Pollen takes precedence when merging the
+supply it, but the data from the `Pollen` takes precedence when merging the
 objects. The data supplies a list of files to act upon with the template engine
 along with the data to inject. The data can also supply file operations to move
 or delete files during the process.
