@@ -8,7 +8,7 @@ you can seed them with an object of data.
 - [The Why](#the-why)
 - [The Overview](#the-overview)
 - [The Example](#the-example)
-- [The Guts](#the-guts)
+- [The Parts](#the-parts)
 - [The Future](#the-future)
 
 ## The Why
@@ -211,17 +211,29 @@ pollinate codingcoop/meanstack https://details.io/1bdDlXc
 
 #### Run `vagrant up` and you are done!
 
-## The Guts
+## The Parts
 
 Pollinate is built on top of the following projects. Each project has been
 carefully chosen to ensure maintainability.
 
-#### Duo Pacakge
+#### Duo Pacakge ([github](https://github.com/duojs/package))
 
-#### Nunjucks
+[Duo](http://duojs.org) is a next generation package manager for the front-end.
+It is wonderful idea that focuses on using Git(Hub) as the source of packages.
+The creator has done an amazing job abstracting the package handler portion of
+the code. Pollinate plans to ride the progress of this code and ideally aid in
+its growth.
 
-#### Commander
+#### Nunjucks ([github](https://github.com/mozilla/nunjucks))
 
-#### HJSON
+Nunjucks is a very promising projects that offers a bridge between the
+JavaScript and Python communities.  It is heavily influenced by the extremely
+popular template engine [Jinja2](http://jinja.pocoo.org/). Jinja and Nunjucks
+both strive to offer a sandboxed template environment which encourages easy
+to digest templates and smart data schemas.
+
+#### Commander ([github](https://github.com/visionmedia/commander.js))
+
+#### HJSON ([github](https://github.com/laktak/hjson-js))
 
 ## The Future
