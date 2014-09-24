@@ -15,6 +15,7 @@ you can seed them with an object of data.
 
 In order to better understand the value of this endeavor, we will answer the
 three questions of [The Coder's Catechism](https://github.com/codingcoop/coders-catechism).
+(This catechism is also a work in progress concept.)
 
 #### What pre-existing ideas does this project build upon?
 
