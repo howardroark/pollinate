@@ -47,16 +47,14 @@ default HTML template. It makes little difference because ultimately it is just
 a set of files that are being adjusted.
 
 Keeping your templates on GitHub allows you to open-source them and evolve them
-with the aid of the greater community. The ability to source data from a JSON
-endpoint allows you to tie together existing APIs so that kicking off projects
-can be a more streamlined process. Or you can just keep your data as a local
-file that you tweak each time, at least all the values are in one place.
+with the aid of the greater community. The concept is meant to be simple so
+even someone new to Linux can grok the idea of how to manipulate the process.
 
 #### What impacts could this project have down the road?
 
 Pollinate allows for services to be built which tie together the APIs of other
 services. It would easy to concieve of a service leveraged the GitHub API and
-offered an interface to choose a template while filling out some important
+offered an interface to choose a `Flower` while filling out some important
 details. From there the service could run the Pollinate code and create the
 user a brand new repository with the output.
 
