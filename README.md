@@ -75,8 +75,7 @@ The `Flower` is a GitHub repository that holds all of the files.  Any file can
 contain template tags that will later be filled in with values. Pollinate uses
 [Nunjucks](http://mozilla.github.io/nunjucks/) as its template engine.
 Nunjucks is a JavaScript clone of [Jinja](http://jinja.pocoo.org/), which
-encourages templates to be sandboxed and easy to read. This ensures that the
-JSON schema is well designed and easy to understand. It also allows
+encourages templates to be sandboxed and easy to read. It also allows
 Pollinate to be attrative to people outside of the JavaScript community.
 The `Flower` has the option of supplying its own default data at the root of the
 template as JSON (flower.json) or [HJSON](http://laktak.github.io/hjson/)
@@ -225,22 +224,22 @@ $ pollinate codingcoop/meanstack https://details.io/1bdDlXc
 ## The Inspiration
 
 This project is heavily inspired by the design of the configuration tool
-[Salt](https://github.com/saltstack/salt). The core idea behind Salt is the
-process of syncing a "State" object over non-blocking services which defines
-how a machine should assemble itself. This project is a continuation of the
-CLI tool for the project [StackStrap](https://github.com/stackstrap) which
-combines Salt with Vagrant to make DevOps easier. Eventually Pollinate will
-phase the Python based CLI tool out so that StackStrap can focus on the
-[Salt States](https://github.com/stackstrap/stackstrap-salt) themselves.
+[Salt](https://github.com/saltstack/salt). The core idea behind salt is the
+process of defining a "State" object which defines how the machine will be
+configured. The "master" service and the "minion" being configured both have
+the right to help define the state, but the minion takes precedence.
 
 While this project does not mirror in anyway the mechanics of Salt, it does
 lean on the idea the an object of data is what should define your process.
 It is increasingly popular to build apps around the idea of well defined JSON
 schemas that work integrate with beautiful templates. Leveraging this way of
-looking at things is the core concept of Pollinate. It seems likely that over
-time apps will start to sync JSON states over non-blocking services rather than
-using RESTful procedures. Perhaps there could be a Pollinate `Flower` the
-better enables this pattern of development down the road!
+looking at things is the core concept of Pollinate.
+
+This project is a continuation of the CLI tool for the project
+[StackStrap](https://github.com/stackstrap) which combines Salt with Vagrant
+to make DevOps easier. Eventually Pollinate will phase the Python based CLI
+tool out so that StackStrap can focus on automation and the
+[Salt States](https://github.com/stackstrap/stackstrap-salt) themselves.
 
 ## The Parts
 
