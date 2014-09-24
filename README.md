@@ -11,6 +11,7 @@ you can **pollinate** them with an object of data.
 - [The Why](#the-why)
 - [The Overview](#the-overview)
 - [The Example](#the-example)
+- [The Inspiration](#the-inspiration)
 - [The Parts](#the-parts)
 - [The Future](#the-future)
 
@@ -49,6 +50,8 @@ a set of files that are being adjusted.
 Keeping your templates on GitHub allows you to open-source them and evolve them
 with the aid of the greater community. The concept is meant to be simple so
 even someone new to Linux can grok the idea of how to manipulate the process.
+Building the project in Node.js also ensures the most diverse group of
+contributors.
 
 #### What impacts could this project have down the road?
 
@@ -218,6 +221,26 @@ $ pollinate codingcoop/meanstack https://details.io/1bdDlXc
 ```
 
 #### Run `vagrant up` and you are done!
+
+## The Inspiration
+
+This project is heavily inspired by the design of the configuration tool
+[Salt](https://github.com/saltstack/salt). The core idea behind Salt is the
+process of syncing a "State" object over non-blocking services which defines
+how a machine should assemble itself. This project is a continuation of the
+CLI tool for the project [StackStrap](https://github.com/stackstrap) which
+combines Salt with Vagrant to make DevOps easier. Eventually Pollinate will
+phase the Python based CLI tool out so that StackStrap can focus on the
+[Salt States](https://github.com/stackstrap/stackstrap-salt) themselves.
+
+While this project does not mirror in anyway the mechanics of Salt, it does
+lean on the idea the an object of data is what should define your process.
+It is increasingly popular to build apps around the idea of well defined JSON
+schemas that work integrate with beautiful templates. Leveraging this way of
+looking at things is the core concept of Pollinate. It seems likely that over
+time apps will start to sync JSON states over non-blocking services rather than
+using RESTful procedures. Perhaps there could be a Pollinate `Flower` the
+better enables this pattern of development down the road!
 
 ## The Parts
 
