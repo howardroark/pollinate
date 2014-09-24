@@ -114,8 +114,8 @@ looking at things is the core concept of Pollinate.
 
 This project is an evolution of the CLI tool for the project
 [StackStrap](https://github.com/stackstrap) which combines Salt with Vagrant
-to make DevOps easier. Eventually Pollinate will phase the Python based CLI
-tool out so that StackStrap can focus on automation and the
+to make DevOps easier for a larger audience. Eventually Pollinate will phase the
+Python based CLI tool out so that StackStrap can focus on automation and the
 [Salt States](https://github.com/stackstrap/stackstrap-salt) themselves.
 
 ## The Example
