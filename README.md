@@ -98,11 +98,17 @@ or delete files during the process.
 
 ## The Example
 
-Suppose you have a Git repo with all your files laid out in the way you
-like to start off a new Node.js site.  In that template you have a few
-files where you want to fill in some details and a few files that you want
-to move around.  You build yourself a simple service that converts a form
-into a JSON object and offer it up via a unique hash.
+Suppose you built a `Flower` designed to start a project using
+[MEANstack](http://mean.io). You set it up so that development can occur within
+a [Vagrant](https://www.vagrantup.com/) box and configure the files so that all
+the dependencies like [MongoDB](http://www.mongodb.org/) are automatically
+installed using [Salt](http://www.saltstack.com/).
+
+In that `Flower` you have a few files where details need to be filled in and a
+couple files that you want to move around. It is likely that the README.md file
+would provide context that is no longer needed after parsing. You build yourself
+a simple service that converts a form into a JSON object and offers it up via a
+unique hash.
 
 ```
 $ pollinate codingcoop/meanstack https://details.io/1bdDlXc
