@@ -220,7 +220,7 @@ carefully chosen to ensure maintainability.
 #### Duo Pacakge ([github](https://github.com/duojs/package))
 
 [Duo](http://duojs.org) is a next generation package manager for the front-end.
-It is wonderful idea that focuses on using Git(Hub) as the source of packages.
+It is wonderful idea that focuses on using GitHub as the source of packages.
 The community around this project is growing at an extremely fast rate and is
 offering a lot of promising advancements in browser based development.
 
