@@ -102,7 +102,7 @@ to move around.  You build yourself a simple service that converts a form
 into a JSON object and offer it up via a unique hash.
 
 ```
-pollinate codingcoop/meanstack https://details.io/1bdDlXc
+$ pollinate codingcoop/meanstack https://details.io/1bdDlXc
 ```
 
 ##### The `Flower` repository
