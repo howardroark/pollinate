@@ -194,6 +194,7 @@ $ pollinate codingcoop/meanstack https://example.com/1bdDlXc
     ]
     parse: [
       PROJECT-README
+      Vagrantfile
     ]
     move: [
      { PROJECT-README: README.md }
@@ -211,12 +212,6 @@ $ pollinate codingcoop/meanstack https://example.com/1bdDlXc
   "details": {
     "box_name": "trusty64",
     "box_url": "http://files.vagrantup.com/trusty64.box"
-  },
-  "operations": {
-    "parse": [
-      "Vagrantfile",
-      "PROJECT-README"
-    ]
   }
 }
 ```
