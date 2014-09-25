@@ -33,9 +33,9 @@ groundwork required to assemble it all.
 With the advent of virtualization tools like [Vagrant](http://vagrantup.com) and
 confiuration tools like [Salt](http://www.saltstack.com/) or
 [Chef](https://www.getchef.com/) it is increasingly easy to automate development
-environments. Pollinate seeks to be a means of simplifying the process by
-allowing people to build templates which require little more than a few
-decisions and simple `vagrant up` to get started.
+environments. Pollinate seeks to be a means of simplifying the process of
+starting a new project by allowing people to build templates which require
+little more than a few decisions and simple `vagrant up` to get started.
 
 #### What pre-existing ideas does this project build upon?
 
