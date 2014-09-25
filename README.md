@@ -18,7 +18,7 @@ you can **pollinate** them with an object of data.
 ## The What?
 
 In order to better understand the value of this endeavor, we will answer the
-three questions of [The Coder's Catechism](https://github.com/codingcoop/coders-catechism).
+questions of [The Coder's Catechism](https://github.com/codingcoop/coders-catechism).
 (This catechism is also a work in progress concept.)
 
 #### What exaclty is this project attempting to accompish?
