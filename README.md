@@ -121,20 +121,20 @@ themselves.
 
 ## The Example
 
-Suppose you built a `Flower` designed to start a building a project using
-[MEANstack](http://mean.io). You set it up so that development can occur within
+Suppose someone built a `Flower` designed to start a building a project using
+[MEANstack](http://mean.io). They set it up so that development can occur within
 a [Vagrant](https://www.vagrantup.com/) box and configure the files so that all
 the dependencies like [MongoDB](http://www.mongodb.org/) are automatically
 installed using [Salt](http://www.saltstack.com/). In that `Flower` there are a
 few files where details need to be filled in and a couple files that need to
 move around. It is likely that the original README.md file would provide context
-that is no longer needed after parsing, so you would want that gone.
+that is no longer needed after parsing, so that would need to go.
 
-Some wonderful person builds a simple service that enables you the ability to
-submit your `Flower`. The service offers a lovely UI to choose a `Flower` and
+Some other wonderful person builds a simple service that enables the ability to
+submit that `Flower`. The service offers a lovely UI to choose the `Flower` and
 convert custom options into a JSON object that is offered up via a unique hash.
-Some lucky person comes along and picks your `Flower` to use. They are offered
-a string to copy and paste it into a terminal with Node.js running, and voila!
+You come along and pick the very same `Flower` to use. You are offered up a
+string to copy and paste it into a terminal with Node.js running, and voila!
 
 ```
 $ pollinate codingcoop/meanstack https://example.com/1bdDlXc
