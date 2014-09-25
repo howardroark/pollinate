@@ -74,11 +74,11 @@ redundancies that occur when on-boarding new people and working in teams.
 
 #### What impacts could this project have down the road?
 
-Pollinate allows for services to be built which tie together the APIs of other
-services. It would easy to concieve of a service leveraged the GitHub API and
-offered an interface to choose a `Flower` while filling out some important
-details. From there the service could run the Pollinate code and create the
-user a brand new repository with the output.
+Pollinate aims to be a tool which can be integrated within larger systems. It
+would easy to concieve of a service leveraged the GitHub API and offered an
+interface to choose a template while filling out some important details. From
+there the service could run the Pollinate code and create the user a brand new
+repository with the output.
 
 ## The Overview
 
