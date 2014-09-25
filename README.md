@@ -131,8 +131,9 @@ In that `Flower` you have a few files where details need to be filled in and a
 couple files that you want to move around. It is likely that the original
 README.md file would provide context that is no longer needed after parsing, so
 you would want that gone. Some wonderful person builds a simple service that
-offers a lovely UI that converts options into a JSON object and offers it up via
-a unique hash.
+offers a lovely UI to pick a `Flower` and convert custom options into a JSON
+object that is offered up via a unique hash. You copy and paste the URL into a
+terminal with Node.js running, and voilà!
 
 ```
 $ pollinate codingcoop/meanstack https://details.io/1bdDlXc
