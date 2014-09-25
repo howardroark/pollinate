@@ -24,18 +24,22 @@ three questions of [The Coder's Catechism](https://github.com/codingcoop/coders-
 #### What exaclty is this project attempting to accompish?
 
 Ultimately an application is little more than a tree of files that describe
-how it works and what it does. As open-source grows new patterns which help us
-build things more effectively are constantly distilled. These patterns can
-then be assembled in a plethora of ways to enable different outcomes. This
-can be problematic when starting new projects because of the amount of
-groundwork required to assemble it all.
+how it works and what it does. As open-source evolves new patterns are
+constantly distilled which can help us build more effectively. These patterns
+can then be assembled in a plethora of ways to enable different outcomes. Over
+time the best practices for how we structure a project for a specific purpose
+should also be distilled.
 
-With the advent of virtualization tools like [Vagrant](http://vagrantup.com) and
-confiuration tools like [Salt](http://www.saltstack.com/) or
-[Chef](https://www.getchef.com/) it is increasingly easy to automate development
-environments. Pollinate seeks to be a means of simplifying the process of
-starting a new project by allowing people to build templates which require
-little more than a few decisions and simple `vagrant up` to get started.
+Pollinate aims to be a simple to understand process for templating files to
+meet a specific and repeatable purpose. The idea is to design your templates to
+have subtle points of variation that can be defined within an object of data.
+The process of storing these variations in an object of data ensures that
+anyone can grok the process and easily manipulate it.
+
+Pollinate will allow you to store your templates on GitHub and chip away at them
+over time. This process will also enable you to benefit from open-source
+communities which share similar goals. When you need to use a template
+Pollinate aims to ensure that the process is as quick and efficient as possible.
 
 #### What pre-existing ideas does this project build upon?
 
@@ -55,19 +59,19 @@ always ideal for a fast pace of iteration.
 
 #### What immediate benefits will this project offer today?
 
-Pollinate is designed to be a simple pattern that can be easily understood. It
-will allow you to treat your project templates much like you would HTML
+With the advent of virtualization tools like [Vagrant](http://vagrantup.com) and
+confiuration tools like [Salt](http://www.saltstack.com/) or
+[Chef](https://www.getchef.com/) it is increasingly easy to automate development
+environments. Pollinate can offer a means of simplifying the process of starting
+a new project by allowing people to build templates which require little more
+than a few decisions and simple `vagrant up` to get started.
+
+It will allow you to treat your project templates much like you would HTML
 templates within an application. You can design a JSON schema that makes sense
 for how you and your teams work. Perhaps you always want to seed a Vagrantfile
 with the "box" you intend to work with, or you just want a title placed in a
 default HTML template. It makes little difference because ultimately it is just
 a set of files that are being adjusted.
-
-Keeping your templates on GitHub allows you to open-source them and evolve them
-with the aid of the greater community. The concept is meant to be simple so
-even someone new to Linux can grok the idea of how to manipulate the process.
-Building the project in Node.js also ensures the most diverse group of
-contributors.
 
 #### What impacts could this project have down the road?
 
