@@ -8,18 +8,34 @@ together they create a fertilized project. Pollinate will allow you to template
 a set of files and store them on GitHub.  When you decide to use them later
 you can **pollinate** them with an object of data.
 
-- [The Why](#the-why)
+- [The What?](#the-what)
 - [The Overview](#the-overview)
 - [The Inspiration](#the-inspiration)
 - [The Example](#the-example)
 - [The Parts](#the-parts)
 - [The Future](#the-future)
 
-## The Why
+## The What?
 
 In order to better understand the value of this endeavor, we will answer the
 three questions of [The Coder's Catechism](https://github.com/codingcoop/coders-catechism).
 (This catechism is also a work in progress concept.)
+
+#### What exaclty is this project attempting to accompish?
+
+Ultimately an application is little more than a tree of files that describe
+how it works and what it does. As open-source grows new patterns which help us
+build things more effectively are constantly distilled. These patterns can
+then be assembled in a plethora of ways to enable different outcomes. This
+can be problematic when starting new projects because of the amount of
+groundwork required to assemble it all.
+
+With the advent of virtualization tools like [Vagrant](http://vagrantup.com) and
+confiuration tools like [Salt](http://www.saltstack.com/) or
+[Chef](https://www.getchef.com/) it is increasingly easy to automate development
+environments. Pollinate seeks to be a means of simplifying the process of
+starting a new project by allowing people to template the combinations of
+patterns that they feel make the most sense for a job.
 
 #### What pre-existing ideas does this project build upon?
 
