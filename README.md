@@ -8,16 +8,16 @@ together they create a fertilized project. Pollinate will allow you to template
 a set of files and store them on GitHub.  When you decide to use them later
 you can **pollinate** them with an object of data.
 
-- [The Purpose](#the-purpose)
+- [The Explanation](#the-explanation)
 - [The Overview](#the-overview)
 - [The Inspiration](#the-inspiration)
 - [The Example](#the-example)
 - [The Parts](#the-parts)
 - [The Future](#the-future)
 
-## The Purpose
+## The Explanation
 
-In order to better understand the purpose of this endeavor, we will answer the
+In order to better understand the value of this endeavor, we will answer the
 questions of [The Coder's Catechism](https://github.com/codingcoop/coders-catechism).
 (This catechism is also a work in progress concept.)
 
@@ -55,7 +55,8 @@ these complications and allow for more customization. While Yeoman is powerful
 it requires that its [generators](http://yeoman.io/authoring/)(templates) be
 built a lot like an application. It also requires the need to submit content to
 [NPM](https://www.npmjs.org/), rather than just living on GitHub. This is not
-always ideal for a fast pace of iteration.
+always ideal for a fast pace of iteration and can limit the diversity of
+variations.
 
 #### What immediate benefits can this project offer today?
 
