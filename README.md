@@ -202,7 +202,7 @@ $ pollinate codingcoop/meanstack https://example.com/1bdDlXc
 }
 ```
 
-##### The resulting JSON for execution
+##### The resulting JSON after merging
 
 ```
 {
@@ -243,6 +243,12 @@ $ pollinate codingcoop/meanstack https://example.com/1bdDlXc
        ...
    └── salt
        ...
+```
+
+(Don't forget to jump into the directory)
+
+```
+$ cd codingcoop
 ```
 
 #### With one `vagrant up` it's ready!
