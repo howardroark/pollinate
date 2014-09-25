@@ -60,7 +60,7 @@ always ideal for a fast pace of iteration.
 #### What immediate benefits will this project offer today?
 
 With the advent of virtualization tools like [Vagrant](http://vagrantup.com) and
-confiuration tools like [Salt](http://www.saltstack.com/) or
+configuration tools like [Salt](http://www.saltstack.com/) or
 [Chef](https://www.getchef.com/) it is increasingly easy to automate development
 environments. Pollinate can offer a means of simplifying the process of starting
 a new project by allowing people to build templates which require little more
