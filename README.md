@@ -61,17 +61,15 @@ always ideal for a fast pace of iteration.
 
 With the advent of virtualization tools like [Vagrant](http://vagrantup.com) and
 configuration tools like [Salt](http://www.saltstack.com/) or
-[Chef](https://www.getchef.com/) it is increasingly easy to automate development
-environments. Pollinate can offer a means of simplifying the process of starting
-a new project by allowing people to build templates which require little more
-than a few decisions and simple `vagrant up` to get started.
+[Chef](https://www.getchef.com/) it is increasingly easy to automate the
+construction of development environments. Pollinate can offer a means of
+simplifying the process of starting a new project by allowing people to build
+templates which require little more than a few decisions and simple `vagrant up`
+to get started. This can also ensure that everyone is operating on top of an
+identical platform.
 
-It will allow you to treat your project templates much like you would HTML
-templates within an application. You can design a JSON schema that makes sense
-for how you and your teams work. Perhaps you always want to seed a Vagrantfile
-with the "box" you intend to work with, or you just want a title placed in a
-default HTML template. It makes little difference because ultimately it is just
-a set of files that are being adjusted.
+In effect Pollinate can offer teams the opportunity to slowly reduce the
+redundancies that occur when on-boarding new people and working in teams.
 
 #### What impacts could this project have down the road?
 
