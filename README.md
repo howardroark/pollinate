@@ -57,7 +57,7 @@ built a lot like an application. It also requires the need to submit content to
 [NPM](https://www.npmjs.org/), rather than just living on GitHub. This is not
 always ideal for a fast pace of iteration.
 
-#### What immediate benefits will this project offer today?
+#### What immediate benefits can this project offer today?
 
 With the advent of virtualization tools like [Vagrant](http://vagrantup.com) and
 configuration tools like [Salt](http://www.saltstack.com/) or
