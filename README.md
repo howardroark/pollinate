@@ -175,7 +175,7 @@ $ pollinate codingcoop/meanstack https://details.io/1bdDlXc
     ]
     move: [
      { PROJECT-README: README.md }
-     { app: {{details.name}} }
+     { app: {{name}}-app }
     ]
   }
 }
@@ -218,7 +218,7 @@ $ pollinate codingcoop/meanstack https://details.io/1bdDlXc
     ],
     move: [
      { "PROJECT-README": "README.md" },
-     { "app": "codingcoop" }
+     { "app": "codingcoop-app" }
     ]
   }
 }
@@ -231,7 +231,7 @@ $ pollinate codingcoop/meanstack https://details.io/1bdDlXc
 └── codingcoop
    ├── README.md
    ├── Vagrantfile
-   ├── codingcoop
+   ├── codingcoop-app
        ...
    ├── bower.json
    ├── gruntfile.js
