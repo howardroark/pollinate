@@ -245,7 +245,7 @@ $ pollinate codingcoop/meanstack https://example.com/1bdDlXc
        ...
 ```
 
-#### Run `vagrant up` and you are done!
+#### With one `vagrant up` it's ready!
 
 ## The Parts
 
