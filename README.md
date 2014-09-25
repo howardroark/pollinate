@@ -128,10 +128,11 @@ the dependencies like [MongoDB](http://www.mongodb.org/) are automatically
 installed using [Salt](http://www.saltstack.com/).
 
 In that `Flower` you have a few files where details need to be filled in and a
-couple files that you want to move around. It is likely that the README.md file
-would provide context that is no longer needed after parsing. You build yourself
-a simple service that converts a form into a JSON object and offers it up via a
-unique hash.
+couple files that you want to move around. It is likely that the original
+README.md file would provide context that is no longer needed after parsing, so
+you would want that gone. Some wonderful person builds a simple service that
+offers a lovely UI that converts options into a JSON object and offers it up via
+a unique hash.
 
 ```
 $ pollinate codingcoop/meanstack https://details.io/1bdDlXc
