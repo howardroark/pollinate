@@ -8,16 +8,16 @@ together they create a fertilized project. Pollinate will allow you to template
 a set of files and store them on GitHub.  When you decide to use them later
 you can **pollinate** them with an object of data.
 
-- [The Explanation](#the-explanation)
+- [The Purpose](#the-purpose)
 - [The Overview](#the-overview)
 - [The Inspiration](#the-inspiration)
 - [The Example](#the-example)
 - [The Parts](#the-parts)
 - [The Future](#the-future)
 
-## The Explanation
+## The Purpose
 
-In order to better understand the value of this endeavor, we will answer the
+In order to better understand the purpose of this endeavor, we will answer the
 questions of [The Coder's Catechism](https://github.com/codingcoop/coders-catechism).
 (This catechism is also a work in progress concept.)
 
