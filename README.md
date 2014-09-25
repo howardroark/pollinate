@@ -160,9 +160,9 @@ $ pollinate codingcoop/meanstack https://details.io/1bdDlXc
 
 ```
 {
+  # A computer safe name (always used to name the parent folder)
+  name: newproject
   details: {
-    # A computer safe name (always used to name the parent folder)
-    name: newproject
     box_name: precise64
     box_url: http://files.vagrantup.com/precise64.box
   }
@@ -185,8 +185,8 @@ $ pollinate codingcoop/meanstack https://details.io/1bdDlXc
 
 ```
 {
+  "name": "codingcoop",
   "details": {
-    "name": "codingcoop",
     "box_name": "trusty64",
     "box_url": "http://files.vagrantup.com/trusty64.box"
   },
@@ -203,8 +203,8 @@ $ pollinate codingcoop/meanstack https://details.io/1bdDlXc
 
 ```
 {
+  "name": "codingcoop",
   "details": {
-    "name": "codingcoop",
     "box_name": "trusty64",
     "box_url": "http://files.vagrantup.com/trusty64.box"
   },
