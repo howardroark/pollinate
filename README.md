@@ -121,22 +121,23 @@ themselves.
 
 ## The Example
 
-Suppose you built a `Flower` designed to start a project using
+Suppose you built a `Flower` designed to start a building a project using
 [MEANstack](http://mean.io). You set it up so that development can occur within
 a [Vagrant](https://www.vagrantup.com/) box and configure the files so that all
 the dependencies like [MongoDB](http://www.mongodb.org/) are automatically
-installed using [Salt](http://www.saltstack.com/).
+installed using [Salt](http://www.saltstack.com/). In that `Flower` there are a
+few files where details need to be filled in and a couple files that need to
+move around. It is likely that the original README.md file would provide context
+that is no longer needed after parsing, so you would want that gone.
 
-In that `Flower` you have a few files where details need to be filled in and a
-couple files that you want to move around. It is likely that the original
-README.md file would provide context that is no longer needed after parsing, so
-you would want that gone. Some wonderful person builds a simple service that
-offers a lovely UI to pick a `Flower` and convert custom options into a JSON
-object that is offered up via a unique hash. You copy and paste the URL into a
-terminal with Node.js running, and voilà!
+Some wonderful person builds a simple service that enables you the ability to
+submit your `Flower`. The service offers a lovely UI to choose a `Flower` and
+convert custom options into a JSON object that is offered up via a unique hash.
+Some lucky person comes along and picks your `Flower` to use. They are offered
+a string to copy and paste it into a terminal with Node.js running, and voila!
 
 ```
-$ pollinate codingcoop/meanstack https://details.io/1bdDlXc
+$ pollinate codingcoop/meanstack https://example.com/1bdDlXc
 ```
 
 ##### The `Flower` repository
