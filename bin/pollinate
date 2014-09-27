@@ -22,7 +22,7 @@ program.on('--help', function() {
 program.parse(process.argv)
 
 if(program.args.length != 2) {
-  log.error('Not enough args. type `pollinate --help` for options.')
+  log.error('Invalid args. type `pollinate --help` for options.')
   process.exit(1)
 }
 
