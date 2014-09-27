@@ -19,7 +19,7 @@
   },
   "bin": {
     "pollinate": "bin/pollinate"
-  }
+  },
   "files": [
     "bin",
     "lib"
