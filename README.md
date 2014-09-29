@@ -21,7 +21,7 @@ In order to better understand the value of this endeavor, we will answer the
 questions of [The Coder's Catechism](https://github.com/codingcoop/coders-catechism).
 (This catechism is also a work in progress concept.)
 
-#### What exaclty is this project attempting to accompish?
+#### What exactly is this project attempting to accompish?
 
 Ultimately an application is little more than a tree of files that describe
 how it works and what it does. As open-source evolves new patterns are
@@ -296,7 +296,7 @@ and has an active community who understands the value of this project.
 
 Commander is super simple and smart API for rapidly prototyping command-line
 tools. The creator @visionmedia is clearly a savant when it comes to
-open-source and undertands exaclty what people are looking for.
+open-source and undertands exactly what people are looking for.
 
 #### HJSON ([github](https://github.com/laktak/hjson-js))
 
