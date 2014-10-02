@@ -179,6 +179,7 @@ $ pollinate codingcoop/meanstack https://example.com/1bdDlXc
 ```
 
 ##### The HJSON file within the `Flower`
+**(Don't worry, it can be JSON as well)**
 
 ```
 {
