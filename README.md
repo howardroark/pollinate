@@ -122,11 +122,10 @@ or delete files during the process.
 This project is inspired by the the configuration management tool
 [Salt](https://github.com/saltstack/salt). The core idea behind Salt is the
 process of creating a "State" object which defines how the machine will be
-configured. The "master" service and the "minion" being configured both have
-the ability to help define the state, but the minion takes precedence.
+configured. While this project does not mirror in any way the mechanics of
+Salt, it does lean on the idea that an object of data is what should define
+your process.
 
-While this project does not mirror in any way the mechanics of Salt, it does
-lean on the idea that an object of data is what should define your process.
 It is increasingly popular to build apps around the idea of well designed JSON
 schemas that enable easy to understand templates. Leveraging this way of
 looking at things is the core concept of Pollinate.
