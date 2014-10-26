@@ -28,7 +28,6 @@ if(program.args.length != 2) {
   process.exit(1)
 }
 
-var pollinate = require('../lib/pollinate.js')
-var state = pollinate.evaluate(program)
+var state = require('../lib/build.js').build(program)
 
 console.log(state);
