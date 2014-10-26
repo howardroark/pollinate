@@ -21,9 +21,14 @@ program.on('--help', function() {
 
 program.parse(process.argv)
 
+var log = require('normalize-log')
+
 if(program.args.length != 2) {
   log.error('Invalid args. type `pollinate --help` for options.')
   process.exit(1)
 }
 
-require('../lib/pollinate')
+var pollinate = require('../lib/pollinate.js')
+var state = pollinate.evaluate(program)
+
+console.log(state);

@@ -15,7 +15,8 @@
     "duo-package": "0",
     "nunjucks": "1",
     "mixin-deep": "0",
-    "hjson": "1"
+    "hjson": "1",
+    "normalize-log": "1"
   },
   "bin": {
     "pollinate": "bin/pollinate"
