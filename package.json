@@ -19,7 +19,7 @@
     "normalize-log": "1"
   },
   "bin": {
-    "pollinate": "bin/pollinate"
+    "pollinate": "bin/pollinate.js"
   },
   "files": [
     "bin",
