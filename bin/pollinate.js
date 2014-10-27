@@ -28,6 +28,4 @@ if(program.args.length != 2) {
   process.exit(1)
 }
 
-var state = require('../lib/build.js').build(program)
-
-console.log(state);
+require('../lib/build.js')
