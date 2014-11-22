@@ -1,6 +1,6 @@
 # Pollinate
 
-> **NOTE:** This project has yet to undergo development. If you like the idea
+> **NOTE:** This project is in active development. If you like the idea
 > and want to help, awesome!
 
 Think of a tree of files as a `Flower` and a JSON endpoint as `Pollen`; combined
