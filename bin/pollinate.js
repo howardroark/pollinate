@@ -37,9 +37,9 @@ if(program.args.length != 2) {
   process.exit(1)
 }
 
-var state = {};
+var state = {}
 
-state.flower = require('../lib/download.js')( program.args[0], 'flower' );
-state.pollen = require('../lib/download.js')( program.args[1], 'pollen' );
+state.flower = require('../lib/download.js')( program.args[0], 'flower' )
+state.pollen = require('../lib/download.js')( program.args[1], 'pollen' )
 
-console.log(state);
+console.log(state)
