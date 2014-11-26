@@ -14,17 +14,19 @@ var chalk = require('chalk')
 
 program
   .version(require('../package.json').version)
-  .usage('<Flower...> <Pollen...>')
+  .usage('flower [pollen]')
 
 program.on('--help', function() {
   console.log('  Examples:')
   console.log()
-  console.log(chalk.magenta('    From the web:'))
+  console.log(chalk.magenta('    Grab from GitHub & HTTP:'))
   console.log('    $ pollinate stackstrap/meanstack https://example.com/1bdDlXc')
   console.log()
-  console.log(chalk.magenta('    From local:'))
+  console.log(chalk.magenta('    Grab local files:'))
   console.log('    $ pollinate ./meanstack ./example.json')
   console.log()
+  console.log(chalk.magenta('    Self-pollinate:'))
+  console.log('    $ pollinate ./meanstack')
   process.exit()
 })
 
