@@ -13,10 +13,11 @@
     "chalk": "0",
     "commander": "2",
     "duo-package": "0",
-    "nunjucks": "1",
-    "mixin-deep": "0",
     "hjson": "1",
-    "normalize-log": "1"
+    "mixin-deep": "0",
+    "normalize-log": "1",
+    "nunjucks": "1",
+    "url-regex": "2"
   },
   "bin": {
     "pollinate": "bin/pollinate.js"
