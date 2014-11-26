@@ -34,7 +34,7 @@ program.parse(process.argv)
 
 var log = require('normalize-log')
 
-if(program.args.length != 2) {
+if(program.args.length < 1) {
   log.error('Invalid args. type `pollinate --help` for options.')
   process.exit(1)
 }
@@ -42,6 +42,6 @@ if(program.args.length != 2) {
 var state = {}
 
 state.flower = require('../lib/download.js')( program.args[0], 'flower' )
-state.pollen = require('../lib/download.js')( program.args[1], 'pollen' )
+state.pollen = (program.args[2]) ? require('../lib/download.js')( program.args[1], 'pollen' ) : false
 
 console.log(state)
