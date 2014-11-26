@@ -42,6 +42,6 @@ if(program.args.length < 1) {
 var state = {}
 
 state.flower = require('../lib/download.js')( program.args[0], 'flower' )
-state.pollen = (program.args[2]) ? require('../lib/download.js')( program.args[1], 'pollen' ) : false
+state.pollen = (program.args.length > 1) ? require('../lib/download.js')( program.args[1], 'pollen' ) : false
 
 console.log(state)
