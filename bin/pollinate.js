@@ -39,9 +39,10 @@ if(program.args.length < 1) {
   process.exit(1)
 }
 
-var state = {}
+state = require('../lib/fetch.js')(program.args)
 
-state.flower = require('../lib/fetch.js')( program.args[0], 'flower' )
-state.pollen = (program.args.length > 1) ? require('../lib/fetch.js')( program.args[1], 'pollen' ) : false
+state = require('../lib/validate.js')(state)
+
+state = require('../lib/cleanup.js')(state)
 
 console.log(state)
