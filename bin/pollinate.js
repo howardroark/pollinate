@@ -39,6 +39,8 @@ if(program.args.length < 1) {
   process.exit(1)
 }
 
+var state = {}
+
 state = require('../lib/fetch.js')(program.args)
 
 state = require('../lib/validate.js')(state)
