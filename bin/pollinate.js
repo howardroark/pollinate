@@ -45,6 +45,8 @@ state = require('../lib/fetch.js')(program.args)
 
 state = require('../lib/validate.js')(state)
 
+state = require('../lib/fertilize.js')(state)
+
 state = require('../lib/cleanup.js')(state)
 
 console.log(state)
