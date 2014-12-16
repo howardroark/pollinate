@@ -1,7 +1,7 @@
 {
   "name": "pollinate",
   "description": "Pollinate files with data to create a fertilized seed!",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "homepage": "https://github.com/codingcoop/pollinate",
   "author": {
     "name": "The Coding Cooperative",
