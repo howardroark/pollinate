@@ -18,7 +18,8 @@
     "normalize-log": "1",
     "nunjucks": "1",
     "request": "2",
-    "url-regex": "2"
+    "url-regex": "2",
+    "mime-types": "2"
   },
   "bin": {
     "pollinate": "bin/pollinate.js"
