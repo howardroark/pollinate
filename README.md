@@ -1,5 +1,7 @@
 # Pollinate
 
+[![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/codingcoop/pollinate?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 > **NOTE:** This project is in active development. If you like the idea
 > and want to help, awesome!
 
