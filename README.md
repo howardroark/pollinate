@@ -37,7 +37,7 @@ $ sudo npm install -g pollinate
 ## An example
 
 ```
-pollinate codingcoop/webapp --name newproject --container alpine --description="A thing that does something." 
+$ pollinate codingcoop/webapp --name newproject --container alpine --description="A thing that does something." 
 ```
 [Skip to more examples...](#more-examples)
 
