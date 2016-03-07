@@ -2,10 +2,6 @@
 
 Combine a Git(Hub) template with project data to generate new files.
 
-```
-$ npm install -g pollinate
-```
-
 [![Join the chat at https://gitter.im/codingcoop/pollinate](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/codingcoop/pollinate?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)  [![npm version](https://badge.fury.io/js/pollinate.svg)](https://badge.fury.io/js/pollinate)  [![Build Status](https://travis-ci.org/codingcoop/pollinate.svg?branch=master)](https://travis-ci.org/codingcoop/pollinate) [![Coverage Status](https://coveralls.io/repos/github/codingcoop/pollinate/badge.svg?branch=master)](https://coveralls.io/github/codingcoop/pollinate?branch=master) [![Dependency Status](https://david-dm.org/codingcoop/pollinate.svg)](https://david-dm.org/codingcoop/pollinate)
 
 ## What?
@@ -31,6 +27,12 @@ amount of complexity.
 
 This project's goal is to offer a elegant way of working with a base set of files that
 can be understood by looking at a single example.
+
+## Install the command line tool
+
+```
+$ sudo npm install -g pollinate
+```
 
 ## An example
 
