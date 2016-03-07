@@ -1,0 +1,11 @@
+{
+  "name": "newproject",
+  "container": "debian",
+  "discard": [
+    "README.md"
+  ],
+  "parse": [
+    "Dockerfile",
+    "PROJECT-README"
+  ]
+}
