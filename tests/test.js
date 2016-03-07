@@ -38,7 +38,7 @@ describe('Test basic example', function () {
         pollinate({
             "inputs": [
                 "codingcoop/webapp",
-                "https://raw.githubusercontent.com/codingcoop/pollinate/master/tests/data.json"
+                "https://raw.githubusercontent.com/codingcoop/pollinate/develop/tests/data.json"
             ],
             "options": {
                 //..
@@ -113,7 +113,7 @@ describe('Test basic example', function () {
         pollinate({
             "inputs": [
                 "./tests/template",
-                "https://raw.githubusercontent.com/codingcoop/pollinate/master/tests/data.json"
+                "https://raw.githubusercontent.com/codingcoop/pollinate/develop/tests/data.json"
             ],
             "options": {
                 //..
