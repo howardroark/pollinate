@@ -9,9 +9,9 @@ Generate a new project directly from Git(Hub) using a simple schema
 It is a command that takes a templated tree of files and generates them for new
 projects using data defined by a simple schema. The data can define an output 
 `name`, files to `discard`, files to `parse` with the data, and files to `move`
-or rename. You can also throw in any other data you'd like to be passed to the
-template context. The template can supply the default data, and that data can be
-extended for each project before generating.
+or rename. The template can supply the default data, and that data can be
+extended for each project before generating.  You can also throw in any other
+data you'd like to be passed to the template context. 
 
 All templates are parsed with [Nunjucks](http://mozilla.github.io/nunjucks/) aka
 [Jinja](http://jinja.pocoo.org/) and [Twig](http://twig.sensiolabs.org/).
