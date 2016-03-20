@@ -1,6 +1,6 @@
 # Pollinate
 
-Combine a Git(Hub) template with project data to generate new files.
+Generate a new project directly from Git(Hub) using a simple schema
 
 [![Join the chat at https://gitter.im/codingcoop/pollinate](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/codingcoop/pollinate?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)  [![npm version](https://badge.fury.io/js/pollinate.svg)](https://badge.fury.io/js/pollinate)  [![Build Status](https://travis-ci.org/codingcoop/pollinate.svg?branch=master)](https://travis-ci.org/codingcoop/pollinate) [![Coverage Status](https://coveralls.io/repos/github/codingcoop/pollinate/badge.svg?branch=master)](https://coveralls.io/github/codingcoop/pollinate?branch=master) [![Dependency Status](https://david-dm.org/codingcoop/pollinate.svg)](https://david-dm.org/codingcoop/pollinate)
 
