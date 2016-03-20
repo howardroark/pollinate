@@ -14,8 +14,7 @@ template can supply the default data, and that data can be extended for each
 project before generating.
 
 All templates are parsed with [Nunjucks](http://mozilla.github.io/nunjucks/) aka
-[Jinja](http://jinja.pocoo.org/) and [Twig](http://twig.sensiolabs.org/). All JSON
-is parsed with [Hjson](http://hjson.org), so you can use comments!
+[Jinja](http://jinja.pocoo.org/) and [Twig](http://twig.sensiolabs.org/).
 
 ## Why?
 
