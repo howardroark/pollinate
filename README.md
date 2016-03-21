@@ -189,6 +189,6 @@ You can specify a command to run on completion
 }
 ```
 
-##### Shout-outs
+### Shout-outs
 
 Thanks to [Alim Maasoglu](https://dribbble.com/binhood) for the fantastic work on the logo!
