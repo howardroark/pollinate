@@ -1,4 +1,4 @@
-# Pollinate
+# ![Pollinate](media/readme.png)
 
 Generate a new project directly from Git(Hub) using a simple schema
 
