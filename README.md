@@ -1,4 +1,4 @@
-# ![Pollinate](media/readme.png)
+# ![Pollinate](https://raw.githubusercontent.com/codingcoop/pollinate/develop/media/readme.png)
 
 Generate a new project directly from Git(Hub) using a simple schema
 
@@ -188,3 +188,7 @@ You can specify a command to run on completion
   "complete": "git init {{ name }}"
 }
 ```
+
+##### Shout-outs
+
+Thanks to [Alim Maasoglu](https://dribbble.com/binhood) for the fantastic work on the logo!

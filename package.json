@@ -1,7 +1,7 @@
 {
   "name": "pollinate",
   "description": "Combine a Git(Hub) template with project data to generate new files.",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "homepage": "http://github.com/codingcoop/pollinate",
   "author": {
     "name": "codingcoop",
