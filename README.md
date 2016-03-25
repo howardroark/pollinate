@@ -1,6 +1,6 @@
 # ![Pollinate](https://raw.githubusercontent.com/nestlings/pollinate/develop/media/readme.png)
 
-Generate a new project directly from Git(Hub) using a simple schema
+Generate a new project directly from Git(Hub) using a simple schema.
 
 [![Join the chat at https://gitter.im/nestlings/pollinate](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/nestlings/pollinate?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)  [![npm version](https://badge.fury.io/js/pollinate.svg)](https://badge.fury.io/js/pollinate)  [![Build Status](https://travis-ci.org/nestlings/pollinate.svg?branch=master)](https://travis-ci.org/nestlings/pollinate) [![Coverage Status](https://coveralls.io/repos/github/nestlings/pollinate/badge.svg?branch=master)](https://coveralls.io/github/nestlings/pollinate?branch=master) [![Dependency Status](https://david-dm.org/nestlings/pollinate.svg)](https://david-dm.org/nestlings/pollinate)
 
