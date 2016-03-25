@@ -7,7 +7,7 @@ describe('Test basic example', function () {
         this.timeout(10000)
         pollinate({
             "inputs": [
-                "codingcoop/webapp",
+                "nestlings/webapp",
                 "{\"name\":\"newproject\",\"container\":\"alpine\"}"
             ],
             "options": {
@@ -22,7 +22,7 @@ describe('Test basic example', function () {
         this.timeout(10000)
         pollinate({
             "inputs": [
-                "codingcoop/webapp",
+                "nestlings/webapp",
                 "tests/data.json"
             ],
             "options": {
@@ -37,8 +37,8 @@ describe('Test basic example', function () {
         this.timeout(10000)
         pollinate({
             "inputs": [
-                "codingcoop/webapp",
-                "https://raw.githubusercontent.com/codingcoop/pollinate/develop/tests/data.json"
+                "nestlings/webapp",
+                "https://raw.githubusercontent.com/nestlings/pollinate/develop/tests/data.json"
             ],
             "options": {
                 //..
@@ -52,7 +52,7 @@ describe('Test basic example', function () {
         this.timeout(10000)
         pollinate({
             "inputs": [
-                "https://github.com/codingcoop/webapp.git",
+                "https://github.com/nestlings/webapp.git",
                 "{\"name\":\"newproject\",\"container\":\"alpine\"}"
             ],
             "options": {
@@ -67,7 +67,7 @@ describe('Test basic example', function () {
         this.timeout(10000)
         pollinate({
             "inputs": [
-                "codingcoop/webapp"
+                "nestlings/webapp"
             ],
             "options": {
                "name": "test",
@@ -113,7 +113,7 @@ describe('Test basic example', function () {
         pollinate({
             "inputs": [
                 "./tests/template",
-                "https://raw.githubusercontent.com/codingcoop/pollinate/develop/tests/data.json"
+                "https://raw.githubusercontent.com/nestlings/pollinate/develop/tests/data.json"
             ],
             "options": {
                 //..

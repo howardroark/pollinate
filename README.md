@@ -1,17 +1,17 @@
-# ![Pollinate](https://raw.githubusercontent.com/codingcoop/pollinate/develop/media/readme.png)
+# ![Pollinate](https://raw.githubusercontent.com/nestlings/pollinate/develop/media/readme.png)
 
 Generate a new project directly from Git(Hub) using a simple schema
 
-[![Join the chat at https://gitter.im/codingcoop/pollinate](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/codingcoop/pollinate?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)  [![npm version](https://badge.fury.io/js/pollinate.svg)](https://badge.fury.io/js/pollinate)  [![Build Status](https://travis-ci.org/codingcoop/pollinate.svg?branch=master)](https://travis-ci.org/codingcoop/pollinate) [![Coverage Status](https://coveralls.io/repos/github/codingcoop/pollinate/badge.svg?branch=master)](https://coveralls.io/github/codingcoop/pollinate?branch=master) [![Dependency Status](https://david-dm.org/codingcoop/pollinate.svg)](https://david-dm.org/codingcoop/pollinate)
+[![Join the chat at https://gitter.im/nestlings/pollinate](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/nestlings/pollinate?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)  [![npm version](https://badge.fury.io/js/pollinate.svg)](https://badge.fury.io/js/pollinate)  [![Build Status](https://travis-ci.org/nestlings/pollinate.svg?branch=master)](https://travis-ci.org/nestlings/pollinate) [![Coverage Status](https://coveralls.io/repos/github/nestlings/pollinate/badge.svg?branch=master)](https://coveralls.io/github/nestlings/pollinate?branch=master) [![Dependency Status](https://david-dm.org/nestlings/pollinate.svg)](https://david-dm.org/nestlings/pollinate)
 
 ## What?
 
 It is a command that takes a templated tree of files and generates them for new
-projects using data defined by a simple schema. The data can define an output 
+projects using data defined by a simple schema. The data can define an output
 `name`, files to `discard`, files to `parse` with the data, and files to `move`
 or rename. The template can supply the default data, and that data can be
 extended for each project.  You can throw in any other data you'd like to be
-passed to the template context as well. 
+passed to the template context as well.
 
 All templates are parsed with [Nunjucks](http://mozilla.github.io/nunjucks/) aka
 [Jinja](http://jinja.pocoo.org/) and [Twig](http://twig.sensiolabs.org/).
@@ -27,16 +27,16 @@ amount of complexity.
 This project's goal is to offer a elegant way of working with a base set of files that
 can be understood by looking at a single example.
 
-## Install the command line tool
+## Install
 
 ```
-$ sudo npm install -g pollinate
+$ npm install -g pollinate
 ```
 
 ## An example
 
 ```
-$ pollinate codingcoop/webapp --name newproject --container alpine --description="A thing that does something." 
+$ pollinate nestlings/webapp --name newproject --container alpine --description="A thing that does something." 
 ```
 [Skip to more examples...](#more-examples)
 
@@ -154,32 +154,32 @@ $ pollinate ./template --name newproject --container ubuntu
 
 You can use any Git url (.git will be removed)
 ```
-$ pollinate https://github.com/codingcoop/webapp.git --name newproject --container ubuntu
+$ pollinate https://github.com/nestlings/webapp.git --name newproject --container ubuntu
 ```
 
 You can pass project data as a file
 ```
-$ pollinate codingcoop/webapp data.json
+$ pollinate nestlings/webapp data.json
 ```
 
 You can pass project data as a JSON string
 ```
-$ pollinate codingcoop/webapp '{"name":"newproject","container":"alpine","description":"A thing that does a thing."}'
+$ pollinate nestlings/webapp '{"name":"newproject","container":"alpine","description":"A thing that does a thing."}'
 ```
 
 You can pass project data as a JSON endpoint
 ```
-$ pollinate codingcoop/webapp https://example.com/json/data
+$ pollinate nestlings/webapp https://example.com/json/data
 ```
 
 You can generate from the default data in the template
 ```
-$ pollinate codingcoop/webapp
+$ pollinate nestlings/webapp
 ```
 
 You can override data as CLI options
 ```
-$ pollinate codingcoop/webapp ~/defaults.json --name=alternate --container=ubuntu
+$ pollinate nestlings/webapp ~/defaults.json --name=alternate --container=ubuntu
 ```
 
 You can specify a command to run on completion
