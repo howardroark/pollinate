@@ -35,6 +35,7 @@
     "is-git-url": "^0.2.3",
     "mkdirp": "^0.5.1",
     "mv": "^2.1.1",
+    "node-dir": "^0.1.11",
     "nodegit": "^0.11.4",
     "nunjucks": "^2.3.0",
     "path-exists": "^2.1.0",
