@@ -36,7 +36,7 @@ $ npm install -g pollinate
 ## An example
 
 ```
-$ pollinate nestlings/webapp --name newproject --container alpine --description="A thing that does something." 
+$ pollinate nestlings/webapp --name newproject --container alpine --description="A thing that does something."
 ```
 [Skip to more examples...](#more-examples)
 
@@ -51,7 +51,7 @@ $ pollinate nestlings/webapp --name newproject --container alpine --description=
 └── template.json
 ```
 
-###### `template.json` (default data)
+###### `template.json` (optional)
 
 ```
 {
@@ -74,6 +74,9 @@ $ pollinate nestlings/webapp --name newproject --container alpine --description=
   "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
 }
 ```
+
+You can omit any or all of `discard`, `parse` and `move`. All files will be
+parsed by default if `parse` is omitted.
 
 ###### `PROJECT-README`
 
