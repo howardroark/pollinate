@@ -1,0 +1,15 @@
+{
+  "name": "newproject",
+  "container": "debian",
+  "parse": [
+    "Dockerfile",
+    "PROJECT-README"
+  ],
+  "move": [
+   { "PROJECT-README": "README.md" },
+   { "project-name": "{{ name }}.txt" },
+   { "project-name-dir": "{{ name }}" },
+   { "project-name-nested": "{{ name }}/{{ name }}/{{ name }}.txt" }
+  ],
+  "complete": "git init {{ name }}"
+}

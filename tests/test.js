@@ -63,7 +63,7 @@ describe('Test basic example', function () {
                 rimraf('newproject', done)
             })
     })
-    it('GitHub with options only', function (done) {
+    it('GitHub with options', function (done) {
         this.timeout(10000)
         pollinate({
             "inputs": [
@@ -76,21 +76,6 @@ describe('Test basic example', function () {
             function(result) {
                 assert.isObject(result);
                 rimraf('test', done)
-            })
-    })
-    it('Local path with json string', function (done) {
-        this.timeout(10000)
-        pollinate({
-            "inputs": [
-                "./tests/template",
-                "{\"name\":\"newproject\",\"container\":\"alpine\"}"
-            ],
-            "options": {
-                //..
-            }},
-            function(result) {
-                assert.isObject(result);
-                rimraf('newproject', done)
             })
     })
     it('Local path with json file', function (done) {
@@ -108,37 +93,37 @@ describe('Test basic example', function () {
                 rimraf('newproject', done)
             })
     })
-    it('Local path with json url', function (done) {
+    it('Local path without template.json, json file with discard omitted', function (done) {
         this.timeout(10000)
         pollinate({
             "inputs": [
-                "./tests/template",
-                "https://raw.githubusercontent.com/nestlings/pollinate/develop/tests/data.json"
+                "./tests/template-no-data/",
+                "tests/data-no-discard.json"
             ],
             "options": {
-                //..
+                //
             }},
             function(result) {
                 assert.isObject(result);
                 rimraf('newproject', done)
             })
     })
-    it('Local path without template.json, json file with discard, parse, move, complete, and option name override', function (done) {
+    it('Local path without template.json, json file with parse omitted', function (done) {
         this.timeout(10000)
         pollinate({
             "inputs": [
                 "./tests/template-no-data/",
-                "tests/data-complete.json"
+                "tests/data-no-parse.json"
             ],
             "options": {
-                "name": "override"
+                //
             }},
             function(result) {
                 assert.isObject(result);
-                rimraf('override', done)
+                rimraf('newproject', done)
             })
     })
-    it('Local path without template.json with json with only discard and parse', function (done) {
+    it('Local path without template.json, json file with move omitted', function (done) {
         this.timeout(10000)
         pollinate({
             "inputs": [
@@ -153,7 +138,22 @@ describe('Test basic example', function () {
                 rimraf('newproject', done)
             })
     })
-    it('Local path without template.json and json without name', function (done) {
+    it('Local path without template.json, json file with complete', function (done) {
+        this.timeout(10000)
+        pollinate({
+            "inputs": [
+                "./tests/template-no-data/",
+                "tests/data-complete.json"
+            ],
+            "options": {
+                //
+            }},
+            function(result) {
+                assert.isObject(result);
+                rimraf('newproject', done)
+            })
+    })
+    it('Local path without template.json, json file without name', function (done) {
         this.timeout(10000)
         pollinate({
             "inputs": [
