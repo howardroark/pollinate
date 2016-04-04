@@ -7,7 +7,7 @@ describe('Test basic example', function () {
         this.timeout(10000)
         pollinate({
             "inputs": [
-                "nestlings/webapp",
+                "howardroark/webapp",
                 "{\"name\":\"newproject\",\"container\":\"alpine\"}"
             ],
             "options": {
@@ -22,7 +22,7 @@ describe('Test basic example', function () {
         this.timeout(10000)
         pollinate({
             "inputs": [
-                "nestlings/webapp",
+                "howardroark/webapp",
                 "tests/data.json"
             ],
             "options": {
@@ -37,8 +37,8 @@ describe('Test basic example', function () {
         this.timeout(10000)
         pollinate({
             "inputs": [
-                "nestlings/webapp",
-                "https://raw.githubusercontent.com/nestlings/pollinate/develop/tests/data.json"
+                "howardroark/webapp",
+                "https://raw.githubusercontent.com/howardroark/pollinate/develop/tests/data.json"
             ],
             "options": {
                 //..
@@ -52,7 +52,7 @@ describe('Test basic example', function () {
         this.timeout(10000)
         pollinate({
             "inputs": [
-                "https://github.com/nestlings/webapp.git",
+                "https://github.com/howardroark/webapp.git",
                 "{\"name\":\"newproject\",\"container\":\"alpine\"}"
             ],
             "options": {
@@ -67,7 +67,7 @@ describe('Test basic example', function () {
         this.timeout(10000)
         pollinate({
             "inputs": [
-                "nestlings/webapp"
+                "howardroark/webapp"
             ],
             "options": {
                "name": "test",

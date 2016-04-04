@@ -1,8 +1,8 @@
-# ![Pollinate](https://raw.githubusercontent.com/nestlings/pollinate/develop/media/readme.png)
+# ![Pollinate](https://raw.githubusercontent.com/howardroark/pollinate/develop/media/readme.png)
 
 Generate a new project directly from Git(Hub) using a simple schema.
 
-[![Join the chat at https://gitter.im/nestlings/pollinate](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/nestlings/pollinate?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)  [![npm version](https://badge.fury.io/js/pollinate.svg)](https://badge.fury.io/js/pollinate)  [![Build Status](https://travis-ci.org/nestlings/pollinate.svg?branch=release)](https://travis-ci.org/nestlings/pollinate) [![Coverage Status](https://coveralls.io/repos/github/nestlings/pollinate/badge.svg?branch=release)](https://coveralls.io/github/nestlings/pollinate?branch=release) [![Dependency Status](https://david-dm.org/nestlings/pollinate.svg)](https://david-dm.org/nestlings/pollinate)
+[![Join the chat at https://gitter.im/howardroark/pollinate](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/howardroark/pollinate?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)  [![npm version](https://badge.fury.io/js/pollinate.svg)](https://badge.fury.io/js/pollinate)  [![Build Status](https://travis-ci.org/howardroark/pollinate.svg?branch=release)](https://travis-ci.org/howardroark/pollinate) [![Coverage Status](https://coveralls.io/repos/github/howardroark/pollinate/badge.svg?branch=release)](https://coveralls.io/github/howardroark/pollinate?branch=release) [![Dependency Status](https://david-dm.org/howardroark/pollinate.svg)](https://david-dm.org/howardroark/pollinate)
 
 ## What?
 
@@ -36,7 +36,7 @@ $ npm install -g pollinate
 ## An example
 
 ```
-$ pollinate nestlings/webapp --name newproject --container alpine --description="A thing that does something."
+$ pollinate howardroark/webapp --name newproject --container alpine --description="A thing that does something."
 ```
 [Skip to more examples...](#more-examples)
 
@@ -157,32 +157,32 @@ $ pollinate ./template --name newproject --container ubuntu
 
 You can use any Git url (.git will be removed)
 ```
-$ pollinate https://github.com/nestlings/webapp.git --name newproject --container ubuntu
+$ pollinate https://github.com/howardroark/webapp.git --name newproject --container ubuntu
 ```
 
 You can pass project data as a file
 ```
-$ pollinate nestlings/webapp data.json
+$ pollinate howardroark/webapp data.json
 ```
 
 You can pass project data as a JSON string
 ```
-$ pollinate nestlings/webapp '{"name":"newproject","container":"alpine","description":"A thing that does a thing."}'
+$ pollinate howardroark/webapp '{"name":"newproject","container":"alpine","description":"A thing that does a thing."}'
 ```
 
 You can pass project data as a JSON endpoint
 ```
-$ pollinate nestlings/webapp https://example.com/json/data
+$ pollinate howardroark/webapp https://example.com/json/data
 ```
 
 You can generate from the default data in the template
 ```
-$ pollinate nestlings/webapp
+$ pollinate howardroark/webapp
 ```
 
 You can override data as CLI options
 ```
-$ pollinate nestlings/webapp ~/defaults.json --name=alternate --container=ubuntu
+$ pollinate howardroark/webapp ~/defaults.json --name=alternate --container=ubuntu
 ```
 
 You can specify a command to run on completion

@@ -1,11 +1,11 @@
 {
   "name": "pollinate",
   "description": "Generate a new project directly from Git(Hub) using a simple schema.",
-  "version": "1.2.1",
-  "homepage": "http://github.com/nestlings/pollinate",
+  "version": "1.2.2",
+  "homepage": "http://github.com/howardroark/pollinate",
   "author": {
-    "name": "nestlings",
-    "url": "https://github.com/nestlings"
+    "name": "howardroark",
+    "url": "https://github.com/howardroark"
   },
   "scripts": {
     "test": "mocha tests/*",
@@ -13,7 +13,7 @@
   },
   "main": "lib/index.js",
   "license": "Unlicence",
-  "repository": "nestlings/pollinate",
+  "repository": "howardroark/pollinate",
   "keywords": [
     "yeoman",
     "nunjucks",
