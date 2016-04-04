@@ -10,7 +10,8 @@
   },
   "scripts": {
     "test": "mocha tests/*",
-    "test-ci": "./node_modules/istanbul/lib/cli.js cover ./node_modules/mocha/bin/_mocha tests/*"
+    "test-ci": "./node_modules/istanbul/lib/cli.js cover ./node_modules/mocha/bin/_mocha tests/*",
+    "release": "git checkout release && git merge develop && npm version $1 && npm publish && git push && git push --tags && git checkout develop && git merge release && git push"
   },
   "main": "lib/index.js",
   "license": "Unlicence",
