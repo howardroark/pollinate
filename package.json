@@ -5,6 +5,7 @@
   "homepage": "http://github.com/howardroark/pollinate",
   "author": {
     "name": "howardroark",
+    "email": "howie@codingcoop.org",
     "url": "https://github.com/howardroark"
   },
   "scripts": {
