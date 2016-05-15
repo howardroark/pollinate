@@ -37,6 +37,7 @@ pollinate({
 }, function(result, err) {
     if(err) {
         console.log(err)
+        process.exit(1)
     } else {
         console.log(JSON.stringify(result, null, 4))
     }
