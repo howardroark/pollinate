@@ -181,7 +181,7 @@ $ pollinate howardroark/webapp
 
 You can override data as CLI options
 ```
-$ pollinate howardroark/webapp ~/defaults.json --name=alternate --container=ubuntu
+$ pollinate howardroark/webapp data.json --name=alternate --container=ubuntu
 ```
 
 You can specify a command to run on completion
@@ -200,6 +200,15 @@ You can ask pollinate to parse all files by defaut
 or
 ```
 $ pollinate howardroark/webapp data.json --parse=*
+```
+
+You can supply user specific data each time with a `~/.pollen` defaults file
+
+```
+{
+  "name": "default",
+  "parse":"*"
+}
 ```
 
 
