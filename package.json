@@ -38,7 +38,6 @@
     "mkdirp": "^0.5.1",
     "mv": "^2.1.1",
     "node-dir": "^0.1.11",
-    "nodegit": "0.4.1",
     "nunjucks": "^2.3.0",
     "path-exists": "^2.1.0",
     "request": "^2.69.0",
