@@ -39,7 +39,6 @@
     "mv": "^2.1.1",
     "node-dir": "^0.1.11",
     "nunjucks": "^2.3.0",
-    "path-exists": "^2.1.0",
     "path-extra": "^3.0.0",
     "request": "^2.69.0",
     "tar-fs": "^1.9.0",
