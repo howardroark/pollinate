@@ -153,19 +153,4 @@ describe('Test basic example', function () {
                 rimraf('newproject', done)
             })
     })
-    it('Local path without template.json, json file without name', function (done) {
-        this.timeout(10000)
-        pollinate({
-            "inputs": [
-                "./tests/template-no-data/",
-                "tests/data-no-name.json"
-            ],
-            "options": {
-                //
-            }},
-            function(result) {
-                assert.isObject(result);
-                rimraf('undefined', done)
-            })
-    })
 })
