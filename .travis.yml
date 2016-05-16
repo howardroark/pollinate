@@ -1,9 +1,5 @@
 language: node_js
 node_js:
   - "0.10"
-addons:
-  apt:
-    sources: [ 'ubuntu-toolchain-r-test' ]
-    packages: [ 'libstdc++6', 'git' ]
 script: "npm run test-ci"
 after_script: "cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js"
