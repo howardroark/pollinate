@@ -197,10 +197,6 @@ You can ask pollinate to parse all files by defaut
   "parse": "*"
 }
 ```
-or
-```
-$ pollinate howardroark/webapp data.json --parse=*
-```
 
 You can supply user specific data each time with a `~/.pollen` defaults file
 
