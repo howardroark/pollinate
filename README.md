@@ -75,7 +75,8 @@ $ pollinate howardroark/webapp --name newproject --container alpine --descriptio
 }
 ```
 
-You can omit any or all of `discard`, `parse` and `move`.
+You can omit any or all of `discard`, `parse` and `move`. If `parse` is omitted
+then all files will be parsed by default. 
 
 ###### `PROJECT-README`
 
@@ -197,17 +198,12 @@ You can ask pollinate to parse all files by defaut
   "parse": "*"
 }
 ```
-or
-```
-$ pollinate howardroark/webapp data.json --parse=*
-```
 
 You can supply user specific data each time with a `~/.pollen` defaults file
 
 ```
 {
-  "name": "default",
-  "parse":"*"
+  "api_key":"secret"
 }
 ```
 
