@@ -44,7 +44,8 @@
     "request": "^2.69.0",
     "tar-fs": "^1.9.0",
     "uuid": "^2.0.1",
-    "valid-url": "^1.0.9"
+    "valid-url": "^1.0.9",
+    "rimraf": "^2.5.2"
   },
   "bin": "./bin.js",
   "files": [
@@ -57,7 +58,6 @@
     "chai": "^3.5.0",
     "coveralls": "^2.11.8",
     "istanbul": "^0.4.2",
-    "mocha": "^2.4.5",
-    "rimraf": "^2.5.2"
+    "mocha": "^2.4.5"
   }
 }
