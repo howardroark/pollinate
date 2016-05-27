@@ -207,6 +207,16 @@ You can supply user specific data each time with a `~/.pollen` defaults file
 }
 ```
 
+You can supply custom nunjucks filters as function exports (files must be included within template)
+
+```
+{
+  ...
+  "filters": {
+    "markdown": "filters/markdown.js"
+  }
+}
+```
 
 ### Shout-outs
 
