@@ -1,7 +1,7 @@
 {
   "name": "pollinate",
   "description": "Generate a new project directly from Git(Hub) using a simple schema.",
-  "version": "1.7.1",
+  "version": "1.8.0",
   "homepage": "http://github.com/howardroark/pollinate",
   "author": {
     "name": "howardroark",
