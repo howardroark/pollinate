@@ -217,6 +217,13 @@ You can supply custom nunjucks `filter` functions (files must be included within
 }
 ```
 
+You can supply a `questions` object to to prompt for data with [Inquirer.js](https://github.com/SBoudrias/Inquirer.js)
+```
+{
+  "questions":"inquirer-questions.js"
+}
+```
+
 ### Shout-outs
 
 Thanks to [Alim Maasoglu](https://dribbble.com/binhood) for the fantastic work on the logo!
