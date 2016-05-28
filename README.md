@@ -57,13 +57,13 @@ $ pollinate howardroark/webapp --name newproject --container alpine --descriptio
 {
   // Core schema
   "name": "webapp",
-  "discard": [
-    "README.md",
-    "template.json"
-  ],
   "parse": [
     "PROJECT-README",
     "Dockerfile"
+  ],
+  "discard": [
+    "README.md",
+    "template.json"
   ],
   "move": [
     { "PROJECT-README": "README.md" },
@@ -107,13 +107,13 @@ FROM {{ container }}
 ```
 {
   "name": "newproject",
-  "discard": [
-    "README.md",
-    "template.json"
-  ],
   "parse": [
     "Dockerfile",
     "PROJECT-README"
+  ],
+  "discard": [
+    "README.md",
+    "template.json"
   ],
   "move": [
     { "PROJECT-README": "README.md" },
