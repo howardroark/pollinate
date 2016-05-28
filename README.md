@@ -207,7 +207,7 @@ You can supply user specific data each time with a `~/.pollen` defaults file
 }
 ```
 
-You can supply custom nunjucks `filter` functions (files must be included within template)
+You can supply custom [Nunjucks `filter`](https://mozilla.github.io/nunjucks/templating.html#filters) functions (files must be included within template)
 
 ```
 {
@@ -217,11 +217,42 @@ You can supply custom nunjucks `filter` functions (files must be included within
 }
 ```
 
+##### `filters/markdown.js`
+
+```
+var markdownParser = function() { ... }
+
+module.exports = function(markdownText) {
+  var html = markdownParser(markdownText)
+  return '<div class="markdown">'+html+'</div>'
+}
+```
+
 You can supply a `questions` object to to prompt for data with [Inquirer.js](https://github.com/SBoudrias/Inquirer.js)
+
 ```
 {
   "questions":"inquirer-questions.js"
 }
+```
+
+##### `inquirer-questions.js`
+
+```
+module.exports = [
+  {
+    type: 'input',
+    name: 'name',
+    message: 'Input a computer friendly name for your project.',
+    default: 'newproject'
+  },
+  {
+    type: 'input',
+    name: 'description',
+    message: 'Input a brief description of your project.',
+    default: 'My new project!'
+  }
+]
 ```
 
 ### Shout-outs
