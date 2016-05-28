@@ -20,9 +20,8 @@ All templates are parsed with [Nunjucks](http://mozilla.github.io/nunjucks/) aka
 
 When starting new projects the quickest way is often to just copy the last project and
 fiddle with it until it works. This can introduce many unwanted issues, like having one
-client's name appear in place of the other's. There are tools like [Yeoman](http://yeoman.io)
-which allow you to build your own scaffolding engines, but not every case requires that
-amount of complexity.
+client's name appear in place of the other's. This tool is inspired by scaffolding engines
+like [Yeoman](http://yeoman.io), but attempts to reduce the amount of complexity.
 
 This project's goal is to offer a elegant way of working with a base set of files that
 can be understood by looking at a single example.
