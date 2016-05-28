@@ -228,7 +228,7 @@ module.exports = function(markdownText) {
 }
 ```
 
-You can supply a `questions` object to prompt for data with [Inquirer.js](https://github.com/SBoudrias/Inquirer.js)
+You can supply a `questions` object to prompt for data with [Inquirer.js](https://github.com/SBoudrias/Inquirer.js) (file must be included in template)
 
 ```
 {
