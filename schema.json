@@ -1,7 +1,9 @@
 {
   "name":"",
-  "discard":[],
   "parse":[],
+  "discard":[],
   "move":[],
+  "questions":"",
+  "filters":{},
   "complete":""
 }
