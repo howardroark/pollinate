@@ -123,12 +123,12 @@ describe('Test basic example', function () {
                 rimraf('newproject', done)
             })
     })
-    it('Local path without template.json, json file with parse omitted', function (done) {
+    it('Local path without template.json, json file with parse set to all', function (done) {
         this.timeout(10000)
         pollinate({
             "inputs": [
                 "./tests/template-no-data/",
-                "tests/data-no-parse.json"
+                "tests/data-parse-all.json"
             ],
             "options": {
                 //

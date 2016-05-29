@@ -1,6 +1,7 @@
 {
   "name": "newproject",
   "container": "debian",
+  "parse":"*",
   "discard": [
     "README.md"
   ],
