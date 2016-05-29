@@ -74,8 +74,7 @@ $ pollinate howardroark/webapp --name newproject --container alpine --descriptio
 }
 ```
 
-You can omit any or all of `discard`, `parse` and `move`. If `parse` is omitted
-then **all files** will be parsed by default. 
+You can omit any or all of `discard`, `parse` and `move`. 
 
 ###### `PROJECT-README`
 
