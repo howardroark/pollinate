@@ -1,4 +1,4 @@
-# ![Pollinate](https://raw.githubusercontent.com/howardroark/pollinate/develop/media/readme.png)
+# ![Pollinate](https://raw.githubusercontent.com/howardroark/pollinate/develop/media/readme.png) [![stability][0]][1]
 
 Generate a new project directly from Git(Hub) using a simple schema.
 
@@ -265,3 +265,6 @@ module.exports = [
 ### Shout-outs
 
 Thanks to [Alim Maasoglu](https://dribbble.com/binhood) for the fantastic work on the logo!
+
+[0]: https://img.shields.io/badge/stability-stable-green.svg?style=flat-square
+[1]: https://nodejs.org/api/documentation.html#documentation_stability_index
