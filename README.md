@@ -200,10 +200,19 @@ You can specify a command to run on completion
 }
 ```
 
-You can ask pollinate to parse all files by defaut
+All `parse` paths are first passed to [globby](https://github.com/sindresorhus/globby)
+
 ```
 {
-  "parse": "*"
+  "parse": ["**"]
+}
+```
+```
+{
+  "parse": [
+    "**",
+    "!templates/*"
+  ]
 }
 ```
 

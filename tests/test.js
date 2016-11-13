@@ -93,21 +93,6 @@ describe('Test basic example', function () {
                 rimraf('newproject', done)
             })
     })
-    it('Local path with json file, override parse all files.', function (done) {
-        this.timeout(10000)
-        pollinate({
-            "inputs": [
-                "./tests/template",
-                "tests/data.json"
-            ],
-            "options": {
-                parse: "*"
-            }},
-            function(result) {
-                assert.isObject(result);
-                rimraf('newproject', done)
-            })
-    })
     it('Local path without template.json, json file with discard omitted', function (done) {
         this.timeout(10000)
         pollinate({
