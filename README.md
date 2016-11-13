@@ -147,6 +147,22 @@ FROM alpine
 
 ## More examples
 
+All `parse` paths are first passed to [globby](https://github.com/sindresorhus/globby)
+
+```
+{
+  "parse": ["**"]
+}
+```
+```
+{
+  "parse": [
+    "**",
+    "!templates/**"
+  ]
+}
+```
+
 You can specify template files as a local directory (.git will be removed)
 ```
 $ pollinate ./template --name newproject --container ubuntu
@@ -197,22 +213,6 @@ You can specify a command to run on completion
 ```
 {
   "complete": "git init {{ name }}"
-}
-```
-
-All `parse` paths are first passed to [globby](https://github.com/sindresorhus/globby)
-
-```
-{
-  "parse": ["**"]
-}
-```
-```
-{
-  "parse": [
-    "**",
-    "!templates/*"
-  ]
 }
 ```
 
