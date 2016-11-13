@@ -39,7 +39,7 @@
     "mkdirp": "^0.5.1",
     "mv": "^2.1.1",
     "node-dir": "^0.1.11",
-    "nunjucks": "^2.3.0",
+    "nunjucks": "^3.0.0",
     "path-extra": "^3.0.0",
     "request": "^2.69.0",
     "rimraf": "^2.5.2",
