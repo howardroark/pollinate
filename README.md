@@ -151,14 +151,14 @@ All `parse` paths are first passed to [globby](https://github.com/sindresorhus/g
 
 ```
 {
-  "parse": ["**"]
+  "parse": ["*"]
 }
 ```
 ```
 {
   "parse": [
-    "**",
-    "!templates/**"
+    "*",
+    "!templates"
   ]
 }
 ```
