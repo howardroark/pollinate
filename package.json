@@ -10,7 +10,8 @@
   },
   "scripts": {
     "test": "mocha tests/*",
-    "test-ci": "./node_modules/istanbul/lib/cli.js cover ./node_modules/mocha/bin/_mocha tests/*"
+    "test-ci": "./node_modules/istanbul/lib/cli.js cover ./node_modules/mocha/bin/_mocha tests/*",
+    "lint": "jslint '**/*.js'"
   },
   "main": "lib/index.js",
   "license": "Unlicence",
@@ -59,6 +60,7 @@
     "chai": "^3.5.0",
     "coveralls": "^2.11.8",
     "istanbul": "^0.4.2",
+    "jslint": "^0.10.3",
     "mocha": "^2.4.5"
   }
 }
