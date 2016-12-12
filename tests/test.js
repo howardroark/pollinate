@@ -1,10 +1,13 @@
-var pollinate = require('../lib/index.js')
-var assert = require('chai').assert
-var rimraf = require('rimraf')
+/*global describe, it*/
+'use strict';
+
+var pollinate = require('../lib/index.js');
+var assert = require('chai').assert;
+var rimraf = require('rimraf');
 
 describe('Test basic example', function () {
     it('GitHub with json string', function (done) {
-        this.timeout(10000)
+        this.timeout(10000);
         pollinate({
             "inputs": [
                 "howardroark/webapp",
@@ -12,14 +15,15 @@ describe('Test basic example', function () {
             ],
             "options": {
                 //..
-            }},
-            function(result) {
-                assert.isObject(result);
-                rimraf('newproject', done)
-            })
-    })
+            }
+        }, function (err, result) {
+            assert.isNull(err);
+            assert.isObject(result);
+            rimraf('newproject', done);
+        });
+    });
     it('GitHub with json file', function (done) {
-        this.timeout(10000)
+        this.timeout(10000);
         pollinate({
             "inputs": [
                 "howardroark/webapp",
@@ -27,14 +31,15 @@ describe('Test basic example', function () {
             ],
             "options": {
                 //..
-            }},
-            function(result) {
-                assert.isObject(result);
-                rimraf('newproject', done)
-            })
-    })
+            }
+        }, function (err, result) {
+            assert.isNull(err);
+            assert.isObject(result);
+            rimraf('newproject', done);
+        });
+    });
     it('GitHub with json url', function (done) {
-        this.timeout(10000)
+        this.timeout(10000);
         pollinate({
             "inputs": [
                 "howardroark/webapp",
@@ -42,14 +47,15 @@ describe('Test basic example', function () {
             ],
             "options": {
                 //..
-            }},
-            function(result) {
-                assert.isObject(result);
-                rimraf('newproject', done)
-            })
-    })
+            }
+        }, function (err, result) {
+            assert.isNull(err);
+            assert.isObject(result);
+            rimraf('newproject', done);
+        });
+    });
     it('Git with json string', function (done) {
-        this.timeout(10000)
+        this.timeout(10000);
         pollinate({
             "inputs": [
                 "https://github.com/howardroark/webapp.git",
@@ -57,29 +63,31 @@ describe('Test basic example', function () {
             ],
             "options": {
                 //..
-            }},
-            function(result) {
-                assert.isObject(result);
-                rimraf('newproject', done)
-            })
-    })
+            }
+        }, function (err, result) {
+            assert.isNull(err);
+            assert.isObject(result);
+            rimraf('newproject', done);
+        });
+    });
     it('GitHub with options', function (done) {
-        this.timeout(10000)
+        this.timeout(10000);
         pollinate({
             "inputs": [
                 "howardroark/webapp"
             ],
             "options": {
-               "name": "test",
-               "container": "ubuntu"
-            }},
-            function(result) {
-                assert.isObject(result);
-                rimraf('test', done)
-            })
-    })
+                "name": "test",
+                "container": "ubuntu"
+            }
+        }, function (err, result) {
+            assert.isNull(err);
+            assert.isObject(result);
+            rimraf('test', done);
+        });
+    });
     it('Local path with json file', function (done) {
-        this.timeout(10000)
+        this.timeout(10000);
         pollinate({
             "inputs": [
                 "./tests/template",
@@ -87,14 +95,15 @@ describe('Test basic example', function () {
             ],
             "options": {
                 //..
-            }},
-            function(result) {
-                assert.isObject(result);
-                rimraf('newproject', done)
-            })
-    })
+            }
+        }, function (err, result) {
+            assert.isNull(err);
+            assert.isObject(result);
+            rimraf('newproject', done);
+        });
+    });
     it('Local path without template.json, json file with discard omitted', function (done) {
-        this.timeout(10000)
+        this.timeout(10000);
         pollinate({
             "inputs": [
                 "./tests/template-no-data/",
@@ -102,14 +111,15 @@ describe('Test basic example', function () {
             ],
             "options": {
                 //
-            }},
-            function(result) {
-                assert.isObject(result);
-                rimraf('newproject', done)
-            })
-    })
+            }
+        }, function (err, result) {
+            assert.isNull(err);
+            assert.isObject(result);
+            rimraf('newproject', done);
+        });
+    });
     it('Local path without template.json, json file with parse set to all', function (done) {
-        this.timeout(10000)
+        this.timeout(10000);
         pollinate({
             "inputs": [
                 "./tests/template-no-data/",
@@ -117,14 +127,15 @@ describe('Test basic example', function () {
             ],
             "options": {
                 //
-            }},
-            function(result) {
-                assert.isObject(result);
-                rimraf('newproject', done)
-            })
-    })
+            }
+        }, function (err, result) {
+            assert.isNull(err);
+            assert.isObject(result);
+            rimraf('newproject', done);
+        });
+    });
     it('Local path without template.json, json file with move omitted', function (done) {
-        this.timeout(10000)
+        this.timeout(10000);
         pollinate({
             "inputs": [
                 "./tests/template-no-data/",
@@ -132,14 +143,15 @@ describe('Test basic example', function () {
             ],
             "options": {
                 //
-            }},
-            function(result) {
-                assert.isObject(result);
-                rimraf('newproject', done)
-            })
-    })
+            }
+        }, function (err, result) {
+            assert.isNull(err);
+            assert.isObject(result);
+            rimraf('newproject', done);
+        });
+    });
     it('Local path without template.json, json file with complete', function (done) {
-        this.timeout(10000)
+        this.timeout(10000);
         pollinate({
             "inputs": [
                 "./tests/template-no-data/",
@@ -147,10 +159,11 @@ describe('Test basic example', function () {
             ],
             "options": {
                 //
-            }},
-            function(result) {
-                assert.isObject(result);
-                rimraf('newproject', done)
-            })
-    })
-})
+            }
+        }, function (err, result) {
+            assert.isNull(err);
+            assert.isObject(result);
+            rimraf('newproject', done);
+        });
+    });
+});

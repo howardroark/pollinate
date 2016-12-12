@@ -26,7 +26,7 @@
     "git"
   ],
   "dependencies": {
-    "async-series": "0.0.1",
+    "async": "^2.1.4",
     "cli-argparse": "^1.1.0",
     "commander": "^2.9.0",
     "extend": "^3.0.0",

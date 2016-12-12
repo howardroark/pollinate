@@ -9,36 +9,37 @@
    There is a 100% chance that this project can use improvements.
    Pull requests are ALWAYS welcome, even if just amounts to a conversation.  */
 
-var program = require('commander')
-var parse = require('cli-argparse')
-var pollinate = require('./lib/index.js')
+'use strict';
+
+var program = require('commander');
+var parse = require('cli-argparse');
+var pollinate = require('./lib/index.js');
 
 program
-  .version(require('./package.json').version)
-  .usage('template [data]')
+    .version(require('./package.json').version)
+    .usage('template [data]');
 
-program.on('--help', function() {
-  console.log('  Examples:')
-  console.log()
-  console.log('    $ pollinate username/template data.json')
-  process.exit()
-})
+program.on('--help', function () {
+    console.log('  Examples:');
+    console.log();
+    console.log('    $ pollinate username/template data.json');
+    process.exit();
+});
 
-program.parse(process.argv)
+program.parse(process.argv);
 
-if(program.args.length < 1) {
-  console.log('Invalid args. type `pollinate --help` for options.')
-  process.exit(1)
+if (program.args.length < 1) {
+    console.log('Invalid args. type `pollinate --help` for options.');
+    process.exit(1);
 }
 
 pollinate({
     inputs: program.args,
     options: parse(process.argv, {camelcase: false}).options
-}, function(result, err) {
-    if(err) {
-        console.log(err)
-        process.exit(1)
-    } else {
-        console.log(JSON.stringify(result, null, 4))
+}, function (err, result) {
+    if (err) {
+        console.log(err);
+        process.exit(1);
     }
-})
+    console.log(JSON.stringify(result, null, 4));
+});
