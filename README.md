@@ -3,7 +3,7 @@
 Generate a new project directly from Git(Hub) using a simple schema.
 
 [![stability][0]][1]
-[![npm version](https://badge.fury.io/js/pollinate.svg)](https://badge.fury.io/js/pollinate)  [![Build Status](https://travis-ci.org/howardroark/pollinate.svg?branch=release)](https://travis-ci.org/howardroark/pollinate) [![Coverage Status](https://coveralls.io/repos/github/howardroark/pollinate/badge.svg?branch=release)](https://coveralls.io/github/howardroark/pollinate?branch=release) [![Dependency Status](https://david-dm.org/howardroark/pollinate.svg)](https://david-dm.org/howardroark/pollinate)
+[![npm version](https://badge.fury.io/js/pollinate.svg)](https://badge.fury.io/js/pollinate)  [![Build Status](https://travis-ci.org/howardroark/pollinate.svg?branch=develop)](https://travis-ci.org/howardroark/pollinate) [![Coverage Status](https://coveralls.io/repos/github/howardroark/pollinate/badge.svg?branch=develop)](https://coveralls.io/github/howardroark/pollinate?branch=develop) [![Dependency Status](https://david-dm.org/howardroark/pollinate.svg)](https://david-dm.org/howardroark/pollinate)
 
 ## What?
 
