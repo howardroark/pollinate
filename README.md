@@ -145,7 +145,7 @@ A thing that does something.
 FROM alpine
 ```
 
-## More examples
+## More options
 
 All `parse` paths are first passed to [globby](https://github.com/sindresorhus/globby)
 
