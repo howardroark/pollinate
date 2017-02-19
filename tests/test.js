@@ -8,6 +8,12 @@ var fs = require('fs');
 var path = require('path');
 
 describe('Test basic example', function () {
+    afterEach(function (done) {
+        rimraf('newproject', function () {
+            rimraf('test', done);
+        });
+    });
+
     it('GitHub with json string', function (done) {
         this.timeout(10000);
         pollinate({
@@ -24,7 +30,7 @@ describe('Test basic example', function () {
             fs.readFile(path.join('newproject', 'README.md'), 'utf8', function (err, data) {
                 assert.isNull(err);
                 assert.notInclude(data, 'This branch is for testing `pollinate howardroark/webapp#test-branch`.');
-                rimraf('newproject', done);
+                done();
             });
         });
     });
@@ -41,7 +47,7 @@ describe('Test basic example', function () {
         }, function (err, result) {
             assert.isNull(err);
             assert.isObject(result);
-            rimraf('newproject', done);
+            done();
         });
     });
     it('GitHub with json url', function (done) {
@@ -57,7 +63,7 @@ describe('Test basic example', function () {
         }, function (err, result) {
             assert.isNull(err);
             assert.isObject(result);
-            rimraf('newproject', done);
+            done();
         });
     });
     it('Git with json string', function (done) {
@@ -73,7 +79,51 @@ describe('Test basic example', function () {
         }, function (err, result) {
             assert.isNull(err);
             assert.isObject(result);
-            rimraf('newproject', done);
+            done();
+        });
+    });
+    it('Git with json string and keepHistory', function (done) {
+        this.timeout(10000);
+        pollinate({
+            "inputs": [
+                "https://github.com/howardroark/webapp.git",
+                "{\"name\":\"newproject\",\"container\":\"alpine\"}"
+            ],
+            "options": {
+                "keepHistory": true
+                //..
+            }
+        }, function (err, result) {
+            assert.isNull(err);
+            assert.isObject(result);
+            fs.stat(path.join('newproject', '.git'), function (err, stats) {
+                assert.isNull(err);
+                assert.isOk(stats.isDirectory());
+                done();
+            })
+        });
+    });
+    it('Git with json string and --keep-history', function (done) {
+        this.timeout(10000);
+        pollinate({
+            "inputs": [
+                "https://github.com/howardroark/webapp.git",
+                "{\"name\":\"newproject\",\"container\":\"alpine\"}"
+            ],
+            "options": {
+                //..
+            },
+            "flags": {
+                "keep-history": true
+            }
+        }, function (err, result) {
+            assert.isNull(err);
+            assert.isObject(result);
+            fs.stat(path.join('newproject', '.git'), function (err, stats) {
+                assert.isNull(err);
+                assert.isOk(stats.isDirectory());
+                done();
+            })
         });
     });
     it('GitHub with options', function (done) {
@@ -89,7 +139,7 @@ describe('Test basic example', function () {
         }, function (err, result) {
             assert.isNull(err);
             assert.isObject(result);
-            rimraf('test', done);
+            done();
         });
     });
     it('GitHub with ref', function (done) {
@@ -108,7 +158,7 @@ describe('Test basic example', function () {
             fs.readFile(path.join('newproject', 'README.md'), 'utf8', function (err, data) {
                 assert.isNull(err);
                 assert.include(data, 'This branch is for testing `pollinate howardroark/webapp#test-branch`.');
-                rimraf('newproject', done);
+                done();
             });
         });
     });
@@ -128,7 +178,7 @@ describe('Test basic example', function () {
             fs.readFile(path.join('newproject', 'README.md'), 'utf8', function (err, data) {
                 assert.isNull(err);
                 assert.include(data, 'This branch is for testing `pollinate howardroark/webapp#test-branch`.');
-                rimraf('newproject', done);
+                done();
             });
         });
     });
@@ -145,7 +195,7 @@ describe('Test basic example', function () {
         }, function (err, result) {
             assert.isNull(err);
             assert.isObject(result);
-            rimraf('newproject', done);
+            done();
         });
     });
     it('Local path without template.json, json file with discard omitted', function (done) {
@@ -161,7 +211,7 @@ describe('Test basic example', function () {
         }, function (err, result) {
             assert.isNull(err);
             assert.isObject(result);
-            rimraf('newproject', done);
+            done();
         });
     });
     it('Local path without template.json, json file with parse set to all', function (done) {
@@ -177,7 +227,7 @@ describe('Test basic example', function () {
         }, function (err, result) {
             assert.isNull(err);
             assert.isObject(result);
-            rimraf('newproject', done);
+            done();
         });
     });
     it('Local path without template.json, json file with move omitted', function (done) {
@@ -193,7 +243,7 @@ describe('Test basic example', function () {
         }, function (err, result) {
             assert.isNull(err);
             assert.isObject(result);
-            rimraf('newproject', done);
+            done();
         });
     });
     it('Local path without template.json, json file with complete', function (done) {
@@ -209,7 +259,7 @@ describe('Test basic example', function () {
         }, function (err, result) {
             assert.isNull(err);
             assert.isObject(result);
-            rimraf('newproject', done);
+            done();
         });
     });
 });

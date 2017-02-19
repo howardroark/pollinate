@@ -33,9 +33,12 @@ if (program.args.length < 1) {
     process.exit(1);
 }
 
+var parsed = parse(process.argv, {camelcase: false});
+
 pollinate({
     inputs: program.args,
-    options: parse(process.argv, {camelcase: false}).options
+    options: parsed.options,
+    flags: parsed.flags
 }, function (err, result) {
     if (err) {
         console.log(err);
