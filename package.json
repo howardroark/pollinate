@@ -10,7 +10,7 @@
   },
   "scripts": {
     "test": "mocha tests/*",
-    "test-ci": "./node_modules/jslint/bin/jslint.js '**/*.js' && ./node_modules/istanbul/lib/cli.js cover ./node_modules/mocha/bin/_mocha tests/*",
+    "test-ci": "./node_modules/jslint/bin/jslint.js lib/**/*.js tests/**/*.js *.js && ./node_modules/istanbul/lib/cli.js cover ./node_modules/mocha/bin/_mocha tests/*",
     "lint": "jslint '**/*.js'"
   },
   "main": "lib/index.js",
