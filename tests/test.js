@@ -1,4 +1,4 @@
-/*global describe, it*/
+/*global describe, it, afterEach*/
 'use strict';
 
 var pollinate = require('../lib/index.js');
@@ -100,7 +100,7 @@ describe('Test basic example', function () {
                 assert.isNull(err);
                 assert.isOk(stats.isDirectory());
                 done();
-            })
+            });
         });
     });
     it('Git with json string and --keep-history', function (done) {
@@ -123,7 +123,7 @@ describe('Test basic example', function () {
                 assert.isNull(err);
                 assert.isOk(stats.isDirectory());
                 done();
-            })
+            });
         });
     });
     it('GitHub with options', function (done) {
