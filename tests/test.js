@@ -4,6 +4,8 @@
 var pollinate = require('../lib/index.js');
 var assert = require('chai').assert;
 var rimraf = require('rimraf');
+var fs = require('fs');
+var path = require('path');
 
 describe('Test basic example', function () {
     it('GitHub with json string', function (done) {
@@ -19,7 +21,11 @@ describe('Test basic example', function () {
         }, function (err, result) {
             assert.isNull(err);
             assert.isObject(result);
-            rimraf('newproject', done);
+            fs.readFile(path.join('newproject', 'README.md'), 'utf8', function (err, data) {
+                assert.isNull(err);
+                assert.notInclude(data, 'This branch is for testing `pollinate howardroark/webapp#test-branch`.');
+                rimraf('newproject', done);
+            });
         });
     });
     it('GitHub with json file', function (done) {
@@ -84,6 +90,46 @@ describe('Test basic example', function () {
             assert.isNull(err);
             assert.isObject(result);
             rimraf('test', done);
+        });
+    });
+    it('GitHub with ref', function (done) {
+        this.timeout(10000);
+        pollinate({
+            "inputs": [
+                "howardroark/webapp#test-branch",
+                "{\"name\":\"newproject\",\"container\":\"alpine\"}"
+            ],
+            "options": {
+                //..
+            }
+        }, function (err, result) {
+            assert.isNull(err);
+            assert.isObject(result);
+            fs.readFile(path.join('newproject', 'README.md'), 'utf8', function (err, data) {
+                assert.isNull(err);
+                assert.include(data, 'This branch is for testing `pollinate howardroark/webapp#test-branch`.');
+                rimraf('newproject', done);
+            });
+        });
+    });
+    it('Git with ref', function (done) {
+        this.timeout(10000);
+        pollinate({
+            "inputs": [
+                "https://github.com/howardroark/webapp.git#test-branch",
+                "{\"name\":\"newproject\",\"container\":\"alpine\"}"
+            ],
+            "options": {
+                //..
+            }
+        }, function (err, result) {
+            assert.isNull(err);
+            assert.isObject(result);
+            fs.readFile(path.join('newproject', 'README.md'), 'utf8', function (err, data) {
+                assert.isNull(err);
+                assert.include(data, 'This branch is for testing `pollinate howardroark/webapp#test-branch`.');
+                rimraf('newproject', done);
+            });
         });
     });
     it('Local path with json file', function (done) {
