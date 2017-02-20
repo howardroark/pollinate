@@ -234,6 +234,14 @@ You can supply custom [Nunjucks `filter`](https://mozilla.github.io/nunjucks/tem
 }
 ```
 
+You can preserve the commit history from the skeleton project with the `--keep-history` CLI option or:
+
+```
+{
+  keepHistory: true
+}
+```
+
 ##### `filters/markdown.js`
 
 ```
