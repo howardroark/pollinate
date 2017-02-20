@@ -15,6 +15,8 @@ var program = require('commander');
 var parse = require('cli-argparse');
 var pollinate = require('./lib/index.js');
 
+var parsed = parse(process.argv, {camelcase: false});
+
 program
     .version(require('./package.json').version)
     .usage('template [data]');
@@ -35,7 +37,8 @@ if (program.args.length < 1) {
 
 pollinate({
     inputs: program.args,
-    options: parse(process.argv, {camelcase: false}).options
+    options: parsed.options,
+    flags: parsed.flags
 }, function (err, result) {
     if (err) {
         console.log(err);
