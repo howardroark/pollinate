@@ -36,6 +36,7 @@
     "hjson": "^2.3.1",
     "inquirer-compatibility-fork": "^2.0.1",
     "is-directory": "^0.3.1",
+    "lodash.merge": "^4.6.0",
     "mkdirp": "^0.5.1",
     "mv": "^2.1.1",
     "node-dir": "^0.1.11",
