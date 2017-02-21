@@ -30,7 +30,6 @@
     "cli-argparse": "^1.1.0",
     "commander": "^2.9.0",
     "extend": "^3.0.0",
-    "file-exists": "^2.0.0",
     "fs-extra": "^2.0.0",
     "globby": "^6.1.0",
     "gunzip-maybe": "^1.3.1",
