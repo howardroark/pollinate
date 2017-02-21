@@ -87,10 +87,9 @@ describe('Test basic example', function () {
         pollinate({
             "inputs": [
                 "https://github.com/howardroark/webapp.git",
-                "{\"name\":\"newproject\",\"container\":\"alpine\"}"
+                "{\"name\":\"newproject\",\"container\":\"alpine\", \"keepHistory\":true}"
             ],
             "options": {
-                "keepHistory": true
                 //..
             }
         }, function (err, result) {
