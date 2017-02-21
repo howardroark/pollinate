@@ -165,6 +165,7 @@ All `parse` paths are first passed to [globby](https://github.com/sindresorhus/g
 
 You can specify `.json` files to merge
 #### `package.json`
+```json
 {
   "name": "@howardroark/webapp",
   "version": "1.0.0",
@@ -184,8 +185,10 @@ You can specify `.json` files to merge
     "lodash": "^4.17.4"
   }
 }
+```
 
 #### `PROJECT-package.json`
+```json
 {
   "name": "@{{ organization }}/{{ name }}",
   "version": "1.0.0",
@@ -200,9 +203,10 @@ You can specify `.json` files to merge
   },
   "homepage": "https://github.com/{{ organization }}/{{ name }}#readme",
 }
+```
 
 #### `template.json`
-```
+```json
 {
   "name": "webapp",
   "description": "project for testing pollinate with merge",
@@ -230,7 +234,7 @@ This will overwrite `package.json` with the contents of `package.json` and `PROJ
 certain `npm` commands to fail.
 
 #### Resulting `package.json`
-```
+```json
 {
   "name": "@myorg/myapp",
   "version": "1.0.0",
