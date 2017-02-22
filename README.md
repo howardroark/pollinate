@@ -145,7 +145,7 @@ A thing that does something.
 FROM alpine
 ```
 
-## More options
+## Parse
 
 All `parse` paths are first passed to [globby](https://github.com/sindresorhus/globby)
 
@@ -163,7 +163,10 @@ All `parse` paths are first passed to [globby](https://github.com/sindresorhus/g
 }
 ```
 
+## Merge
+
 You can specify `.json` files to merge
+
 #### `package.json`
 ```json
 {
@@ -255,6 +258,8 @@ certain `npm` commands to fail.
   }
 }
 ```
+
+## More options
 
 You can specify template files as a local directory (.git will be removed)
 ```
