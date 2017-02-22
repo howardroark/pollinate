@@ -145,7 +145,7 @@ A thing that does something.
 FROM alpine
 ```
 
-## More options
+## Parse
 
 All `parse` paths are first passed to [globby](https://github.com/sindresorhus/globby)
 
@@ -162,6 +162,104 @@ All `parse` paths are first passed to [globby](https://github.com/sindresorhus/g
   ]
 }
 ```
+
+## Merge
+
+You can specify `.json` files to merge
+
+#### `package.json`
+```json
+{
+  "name": "@howardroark/webapp",
+  "version": "1.0.0",
+  "description": "project for testing pollinate with merge",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/howardroark/webapp.git"
+  },
+  "author": "Andy Edwards",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/howardroark/webapp/issues"
+  },
+  "homepage": "https://github.com/howardroark/webapp#readme",
+  "dependencies": {
+    "lodash": "^4.17.4"
+  }
+}
+```
+
+#### `PROJECT-package.json`
+```json
+{
+  "name": "@{{ organization }}/{{ name }}",
+  "version": "1.0.0",
+  "description": "{{ description }}",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/{{ organization }}/{{ name }}.git"
+  },
+  "author": "{{ author }}",
+  "bugs": {
+    "url": "https://github.com/{{ organization }}/{{ name }}/issues"
+  },
+  "homepage": "https://github.com/{{ organization }}/{{ name }}#readme",
+}
+```
+
+#### `template.json`
+```json
+{
+  "name": "webapp",
+  "description": "project for testing pollinate with merge",
+  "organization": "howardroark",
+  "author": "Andy Edwards",
+  "parse": [
+    "PROJECT-package.json"
+  ],
+  "merge": [
+    ["package.json", "PROJECT-package.json"]
+  ],
+  "discard": [
+    "PROJECT-package.json"
+  ]
+}
+```
+
+#### command
+```
+pollinate howardroark/webapp#merge-test --name myapp --description 'my new app' --organization myorg --author Me
+```
+
+This will overwrite `package.json` with the contents of `package.json` and `PROJECT-package.json` merged with
+`lodash.merge`.  This is useful when you want to keep template variables out of `package.json`, since they would cause
+certain `npm` commands to fail.
+
+#### Resulting `package.json`
+```json
+{
+  "name": "@myorg/myapp",
+  "version": "1.0.0",
+  "description": "my new app",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/myorg/myapp.git"
+  },
+  "author": "Me",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/myorg/myapp/issues"
+  },
+  "homepage": "https://github.com/myorg/myapp#readme",
+  "dependencies": {
+    "lodash": "^4.17.4"
+  }
+}
+```
+
+## More options
 
 You can specify template files as a local directory (.git will be removed)
 ```

@@ -181,6 +181,53 @@ describe('Test basic example', function () {
             });
         });
     });
+    it('Git with ref and merge', function (done) {
+        this.timeout(10000);
+        pollinate({
+            "inputs": [
+                "https://github.com/howardroark/webapp.git#merge-test",
+                "{\"name\":\"newproject\"}"
+            ],
+            "options": {
+                //..
+            }
+        }, function (err, result) {
+            assert.isNull(err);
+            assert.isObject(result);
+            fs.readFile(path.join('newproject', 'package.json'), 'utf8', function (err, data) {
+                assert.isNull(err);
+                var parsed = JSON.parse(data);
+                assert.equal(parsed.name, 'newproject');
+                assert.equal(parsed.version, '1.0.0');
+                assert.isOk(parsed.dependencies);
+                assert.isOk(parsed.dependencies.lodash);
+                assert.equal(parsed.bugs.url, 'https://github.com/howardroark/newproject/issues');
+                fs.readFile(path.join('newproject', 'settings.json'), 'utf8', function (err, data) {
+                    assert.isNull(err);
+                    parsed = JSON.parse(data);
+                    assert.equal(parsed.hello, 'world newproject');
+                    assert.equal(parsed.foo, 'newproject');
+                    done();
+                });
+            });
+        });
+    });
+    it('Git with ref and merge error', function (done) {
+        this.timeout(10000);
+        pollinate({
+            "inputs": [
+                "https://github.com/howardroark/webapp.git#merge-error-test",
+                "{\"name\":\"newproject\"}"
+            ],
+            "options": {
+                //..
+            }
+        }, function (err, result) {
+            assert.isNotNull(err);
+            assert.isNotOk(result);
+            done();
+        });
+    });
     it('Local path with json file', function (done) {
         this.timeout(10000);
         pollinate({
