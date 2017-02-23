@@ -383,6 +383,7 @@ certain `npm` commands to fail.
 
 - [@binhood](https://dribbble.com/binhood) for the fantastic work on the logo!
 - [@jedwards1211](https://github.com/jedwards1211) for the handy object `merge` option :)
+- [@ben657](https://github.com/ben657) for refactoring a bunch of stuff :o
 
 [0]: https://img.shields.io/badge/stability-stable-green.svg?style=flat-square
 [1]: https://nodejs.org/api/documentation.html#documentation_stability_index
