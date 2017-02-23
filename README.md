@@ -233,31 +233,6 @@ pollinate howardroark/webapp#merge-test --name myapp --description 'my new app' 
 ```
 
 This will overwrite `package.json` with the contents of `package.json` and `PROJECT-package.json` merged with
-`lodash.merge`.  This is useful when you want to keep template variables out of `package.json`, since they would cause
-certain `npm` commands to fail.
-
-#### Resulting `package.json`
-```json
-{
-  "name": "@myorg/myapp",
-  "version": "1.0.0",
-  "description": "my new app",
-  "main": "index.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/myorg/myapp.git"
-  },
-  "author": "Me",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/myorg/myapp/issues"
-  },
-  "homepage": "https://github.com/myorg/myapp#readme",
-  "dependencies": {
-    "lodash": "^4.17.4"
-  }
-}
-```
 
 ## More options
 
@@ -378,9 +353,36 @@ module.exports = [
 ]
 ```
 
-### Shout-outs
+`lodash.merge`.  This is useful when you want to keep template variables out of `package.json`, since they would cause
+certain `npm` commands to fail.
 
-Thanks to [Alim Maasoglu](https://dribbble.com/binhood) for the fantastic work on the logo!
+#### Resulting `package.json`
+```json
+{
+  "name": "@myorg/myapp",
+  "version": "1.0.0",
+  "description": "my new app",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/myorg/myapp.git"
+  },
+  "author": "Me",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/myorg/myapp/issues"
+  },
+  "homepage": "https://github.com/myorg/myapp#readme",
+  "dependencies": {
+    "lodash": "^4.17.4"
+  }
+}
+```
+
+### Thanks
+
+- [@binhood](https://dribbble.com/binhood) for the fantastic work on the logo!
+- @jedwards1211 for the handy object `merge` option :)
 
 [0]: https://img.shields.io/badge/stability-stable-green.svg?style=flat-square
 [1]: https://nodejs.org/api/documentation.html#documentation_stability_index
