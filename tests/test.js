@@ -39,7 +39,7 @@ describe('Test basic example', function () {
         pollinate({
             "inputs": [
                 "howardroark/webapp",
-                "tests/data.json"
+                "tests/mocks/data.json"
             ],
             "options": {
                 //..
@@ -55,7 +55,7 @@ describe('Test basic example', function () {
         pollinate({
             "inputs": [
                 "howardroark/webapp",
-                "https://raw.githubusercontent.com/howardroark/pollinate/develop/tests/data.json"
+                "https://raw.githubusercontent.com/howardroark/pollinate/develop/tests/mocks/data.json"
             ],
             "options": {
                 //..
@@ -232,8 +232,8 @@ describe('Test basic example', function () {
         this.timeout(10000);
         pollinate({
             "inputs": [
-                "./tests/template",
-                "tests/data.json"
+                "./tests/mocks/template",
+                "tests/mocks/data.json"
             ],
             "options": {
                 //..
@@ -248,8 +248,8 @@ describe('Test basic example', function () {
         this.timeout(10000);
         pollinate({
             "inputs": [
-                "./tests/template-no-data/",
-                "tests/data-no-discard.json"
+                "./tests/mocks/template-no-data/",
+                "tests/mocks/data-no-discard.json"
             ],
             "options": {
                 //
@@ -264,8 +264,8 @@ describe('Test basic example', function () {
         this.timeout(10000);
         pollinate({
             "inputs": [
-                "./tests/template-no-data/",
-                "tests/data-parse-all.json"
+                "./tests/mocks/template-no-data/",
+                "tests/mocks/data-parse-all.json"
             ],
             "options": {
                 //
@@ -280,8 +280,8 @@ describe('Test basic example', function () {
         this.timeout(10000);
         pollinate({
             "inputs": [
-                "./tests/template-no-data/",
-                "tests/data-no-move.json"
+                "./tests/mocks/template-no-data/",
+                "tests/mocks/data-no-move.json"
             ],
             "options": {
                 //
@@ -296,8 +296,8 @@ describe('Test basic example', function () {
         this.timeout(10000);
         pollinate({
             "inputs": [
-                "./tests/template-no-data/",
-                "tests/data-complete.json"
+                "./tests/mocks/template-no-data/",
+                "tests/mocks/data-complete.json"
             ],
             "options": {
                 //
