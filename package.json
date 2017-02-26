@@ -43,6 +43,7 @@
     "ospath": "^1.2.2",
     "request": "^2.69.0",
     "rimraf": "^2.5.2",
+    "symlink-or-copy": "^1.1.8",
     "tar-fs": "^1.9.0",
     "uuid": "^3.0.1",
     "valid-url": "^1.0.9"
