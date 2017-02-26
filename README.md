@@ -172,17 +172,6 @@ You can pass project data as a JSON endpoint
 $ pollinate howardroark/webapp https://example.com/json/data
 ```
 
-You can supply a target directory (will create directories that do not exist).
-
-```
-$ pollinate howardroark/webapp target
-```
-or
-
-```
-$ pollinate howardroark/webapp /target/directory data.json
-```
-
 You can generate from the default data in the template
 ```
 $ pollinate howardroark/webapp
