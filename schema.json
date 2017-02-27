@@ -1,11 +1,19 @@
 {
-  "name":"",
-  "parse":[],
-  "merge": [],
-  "discard":[],
-  "move":[],
-  "link": [],
-  "questions":"",
-  "filters":{},
-  "complete":""
+  "name":"project",
+  "parse":[
+    "template-file"
+  ],
+  "merge": [
+    [ "merge-file.json", "some-data.json", "some-other-data.json" ]
+  ],
+  "discard":[
+    "file"
+  ],
+  "move":[
+    { "origin-file": "new-name" }
+  ],
+  "link": [
+    { "origin-path": "linked/path" }
+  ],
+  "complete":"some shell command"
 }
