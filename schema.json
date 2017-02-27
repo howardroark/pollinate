@@ -12,5 +12,8 @@
   "move":[
     { "origin-file": "new-name" }
   ],
+  "link": [
+    { "origin-path": "linked/path" }
+  ],
   "complete":"some shell command"
 }
