@@ -15,5 +15,8 @@
    { "project-name-dir": "{{ name }}" },
    { "project-name-nested": "{{ name }}/{{ name }}/{{ name }}.txt" }
   ],
+  "link": [
+    { "{{ name }}.txt": "{{ name }}/{{ name }}/{{ name }}-link.txt" }
+  ],
   "complete": "git init {{ name }}"
 }
