@@ -25,6 +25,9 @@
     "github",
     "git"
   ],
+  "engines": {
+    "node": ">=0.10.0"
+  },
   "dependencies": {
     "async": "^2.1.4",
     "cli-argparse": "^1.1.0",
