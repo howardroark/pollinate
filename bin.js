@@ -41,7 +41,7 @@ pollinate({
     flags: parsed.flags
 }, function (err, result) {
     if (err) {
-        console.log(err);
+        console.error(err);
         process.exit(1);
     }
     console.log(JSON.stringify(result, null, 4));
