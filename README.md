@@ -205,6 +205,8 @@ You can preserve the commit history from the skeleton project with the `--keep-h
 }
 ```
 
+## Filters
+
 You can supply custom [Nunjucks `filter`](https://mozilla.github.io/nunjucks/templating.html#filters) functions (files must be included within template)
 
 ```
