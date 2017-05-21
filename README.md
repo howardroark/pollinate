@@ -36,7 +36,7 @@ $ npm install -g pollinate
 ```
 $ pollinate howardroark/webapp --name newproject --container alpine --description="A thing that does something."
 ```
-[Skip to more examples...](#more-examples)
+[Skip to more examples...](#more-options)
 
 ##### The GitHub sourced template
 
