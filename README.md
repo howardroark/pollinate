@@ -34,7 +34,7 @@ $ npm install -g pollinate
 ## An example
 
 ```
-$ pollinate howardroark/webapp --name newproject --container alpine --description="A thing that does something."
+$ pollinate howardroark/webapp --name newproject --image alpine --description="A thing that does something."
 ```
 [Skip to more examples...](#more-options)
 
@@ -68,7 +68,7 @@ $ pollinate howardroark/webapp --name newproject --container alpine --descriptio
     { "project-name": "{{ name }}.txt" }
   ],
   // Custom defaults
-  "container": "debian",
+  "image": "debian",
   "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
 }
 ```
@@ -86,7 +86,7 @@ You can omit any or all of `discard`, `parse` and `move`.
 ###### `Dockerfile`
 
 ```
-FROM {{ container }}
+FROM {{ image }}
 ```
 
 ##### The project data
@@ -94,7 +94,7 @@ FROM {{ container }}
 ```
 {
   "name": "newproject",
-  "container": "alpine",
+  "image": "alpine",
   "description": "A thing that does something."
 }
 ```
@@ -116,7 +116,7 @@ FROM {{ container }}
     { "PROJECT-README": "README.md" },
     { "project-name": "newproject.txt" }
   ],
-  "container": "alpine",
+  "image": "alpine",
   "description": "A thing that does something."
 }
 ```
@@ -149,12 +149,12 @@ FROM alpine
 
 You can specify template files as a local directory (.git will be removed)
 ```
-$ pollinate ./template --name newproject --container ubuntu
+$ pollinate ./template --name newproject --image ubuntu
 ```
 
 You can use any Git url (.git will be removed)
 ```
-$ pollinate https://github.com/howardroark/webapp.git --name newproject --container ubuntu
+$ pollinate https://github.com/howardroark/webapp.git --name newproject --image ubuntu
 ```
 
 You can pass project data as a file
@@ -164,7 +164,7 @@ $ pollinate howardroark/webapp data.json
 
 You can pass project data as a JSON string
 ```
-$ pollinate howardroark/webapp '{"name":"newproject","container":"alpine","description":"A thing that does a thing."}'
+$ pollinate howardroark/webapp '{"name":"newproject","image":"alpine","description":"A thing that does a thing."}'
 ```
 
 You can pass project data as a JSON endpoint
@@ -179,7 +179,7 @@ $ pollinate howardroark/webapp
 
 You can override data as CLI options
 ```
-$ pollinate howardroark/webapp data.json --name=alternate --container=ubuntu
+$ pollinate howardroark/webapp data.json --name=alternate --image=ubuntu
 ```
 
 You can specify a command to run on completion
