@@ -1,6 +1,6 @@
 language: node_js
 node_js:
-- '0.10'
+- '8'
 script: npm run test-ci
 after_script: cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js
 deploy:
