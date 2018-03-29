@@ -1,5 +1,5 @@
 {
-  "name": "newproject",
+  "name": "data-parse-all",
   "container": "debian",
   "parse":["**"],
   "discard": [

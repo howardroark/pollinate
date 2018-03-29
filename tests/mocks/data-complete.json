@@ -1,5 +1,5 @@
 {
-  "name": "newproject",
+  "name": "data-complete",
   "container": "debian",
   "discard": [
     "README.md"

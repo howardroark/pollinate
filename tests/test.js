@@ -257,7 +257,7 @@ describe('Test basic example', function () {
         }, function (err, result) {
             assert.isNull(err);
             assert.isObject(result);
-            done();
+            rimraf('data-no-discard', done);
         });
     });
     it('Local path without template.json, json file with parse set to all', function (done) {
@@ -273,7 +273,7 @@ describe('Test basic example', function () {
         }, function (err, result) {
             assert.isNull(err);
             assert.isObject(result);
-            done();
+            rimraf('data-parse-all', done);
         });
     });
     it('Local path without template.json, json file with move omitted', function (done) {
@@ -289,7 +289,7 @@ describe('Test basic example', function () {
         }, function (err, result) {
             assert.isNull(err);
             assert.isObject(result);
-            done();
+            rimraf('data-no-move', done);
         });
     });
     it('Local path without template.json, json file with complete', function (done) {
@@ -305,7 +305,7 @@ describe('Test basic example', function () {
         }, function (err, result) {
             assert.isNull(err);
             assert.isObject(result);
-            done();
+            rimraf('data-complete', done);
         });
     });
 });

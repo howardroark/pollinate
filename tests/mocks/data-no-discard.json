@@ -1,5 +1,5 @@
 {
-  "name": "newproject",
+  "name": "data-no-discard",
   "container": "debian",
   "parse": [
     "Dockerfile",
