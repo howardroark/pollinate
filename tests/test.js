@@ -15,7 +15,6 @@ describe('Test basic example', function () {
     });
 
     it('GitHub with json string', function (done) {
-        this.timeout(10000);
         pollinate({
             "inputs": [
                 "howardroark/webapp",
@@ -35,7 +34,6 @@ describe('Test basic example', function () {
         });
     });
     it('GitHub with json file', function (done) {
-        this.timeout(10000);
         pollinate({
             "inputs": [
                 "howardroark/webapp",
@@ -51,7 +49,6 @@ describe('Test basic example', function () {
         });
     });
     it('GitHub with json url', function (done) {
-        this.timeout(10000);
         pollinate({
             "inputs": [
                 "howardroark/webapp",
@@ -67,7 +64,6 @@ describe('Test basic example', function () {
         });
     });
     it('Git with json string', function (done) {
-        this.timeout(10000);
         pollinate({
             "inputs": [
                 "https://github.com/howardroark/webapp.git",
@@ -83,7 +79,6 @@ describe('Test basic example', function () {
         });
     });
     it('Git with json string and keepHistory', function (done) {
-        this.timeout(10000);
         pollinate({
             "inputs": [
                 "https://github.com/howardroark/webapp.git",
@@ -103,7 +98,6 @@ describe('Test basic example', function () {
         });
     });
     it('Git with json string and --keep-history', function (done) {
-        this.timeout(10000);
         pollinate({
             "inputs": [
                 "https://github.com/howardroark/webapp.git",
@@ -126,7 +120,6 @@ describe('Test basic example', function () {
         });
     });
     it('GitHub with options', function (done) {
-        this.timeout(10000);
         pollinate({
             "inputs": [
                 "howardroark/webapp"
@@ -142,7 +135,6 @@ describe('Test basic example', function () {
         });
     });
     it('GitHub with ref', function (done) {
-        this.timeout(10000);
         pollinate({
             "inputs": [
                 "howardroark/webapp#test-branch",
@@ -162,7 +154,6 @@ describe('Test basic example', function () {
         });
     });
     it('Git with ref', function (done) {
-        this.timeout(10000);
         pollinate({
             "inputs": [
                 "https://github.com/howardroark/webapp.git#test-branch",
@@ -182,7 +173,6 @@ describe('Test basic example', function () {
         });
     });
     it('Git with ref and merge', function (done) {
-        this.timeout(10000);
         pollinate({
             "inputs": [
                 "https://github.com/howardroark/webapp.git#merge-test",
@@ -213,7 +203,6 @@ describe('Test basic example', function () {
         });
     });
     it('Git with ref and merge error', function (done) {
-        this.timeout(10000);
         pollinate({
             "inputs": [
                 "https://github.com/howardroark/webapp.git#merge-error-test",
@@ -229,7 +218,6 @@ describe('Test basic example', function () {
         });
     });
     it('Local path with json file', function (done) {
-        this.timeout(10000);
         pollinate({
             "inputs": [
                 "./tests/mocks/template",
@@ -245,7 +233,6 @@ describe('Test basic example', function () {
         });
     });
     it('Local path without template.json, json file with discard omitted', function (done) {
-        this.timeout(10000);
         pollinate({
             "inputs": [
                 "./tests/mocks/template-no-data/",
@@ -261,7 +248,6 @@ describe('Test basic example', function () {
         });
     });
     it('Local path without template.json, json file with parse set to all', function (done) {
-        this.timeout(10000);
         pollinate({
             "inputs": [
                 "./tests/mocks/template-no-data/",
@@ -277,7 +263,6 @@ describe('Test basic example', function () {
         });
     });
     it('Local path without template.json, json file with move omitted', function (done) {
-        this.timeout(10000);
         pollinate({
             "inputs": [
                 "./tests/mocks/template-no-data/",
@@ -293,7 +278,6 @@ describe('Test basic example', function () {
         });
     });
     it('Local path without template.json, json file with complete', function (done) {
-        this.timeout(10000);
         pollinate({
             "inputs": [
                 "./tests/mocks/template-no-data/",
