@@ -1,6 +1,6 @@
 {
   "name": "data-parse-all",
-  "container": "debian",
+  "image": "debian",
   "parse":["**"],
   "discard": [
     "README.md"

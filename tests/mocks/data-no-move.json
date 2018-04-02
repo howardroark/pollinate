@@ -1,6 +1,6 @@
 {
   "name": "data-no-move",
-  "container": "debian",
+  "image": "debian",
   "discard": [
     "README.md"
   ],

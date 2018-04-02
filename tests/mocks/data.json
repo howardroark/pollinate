@@ -1,4 +1,4 @@
 {
     "name": "newproject",
-    "container":"alpine"
+    "image":"alpine"
 }

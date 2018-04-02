@@ -1,6 +1,6 @@
 {
   "name": "data-no-discard",
-  "container": "debian",
+  "image": "debian",
   "parse": [
     "Dockerfile",
     "PROJECT-README"

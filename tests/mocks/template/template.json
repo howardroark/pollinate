@@ -1,6 +1,6 @@
 {
   "name": "newproject",
-  "container": "debian",
+  "image": "debian",
   "discard": [
     "README.md",
     "template.json"

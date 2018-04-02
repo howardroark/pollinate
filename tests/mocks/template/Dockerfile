@@ -1,1 +1,1 @@
-FROM {{ container }}
+FROM {{ image }}

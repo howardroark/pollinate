@@ -1,6 +1,6 @@
 {
   "name": "data-complete",
-  "container": "debian",
+  "image": "debian",
   "discard": [
     "README.md"
   ],

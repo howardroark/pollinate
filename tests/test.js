@@ -18,7 +18,7 @@ describe('Test basic example', function () {
         pollinate({
             "inputs": [
                 "howardroark/webapp",
-                "{\"name\":\"newproject\",\"container\":\"alpine\"}"
+                "{\"name\":\"newproject\",\"image\":\"alpine\"}"
             ],
             "options": {
                 //..
@@ -67,7 +67,7 @@ describe('Test basic example', function () {
         pollinate({
             "inputs": [
                 "https://github.com/howardroark/webapp.git",
-                "{\"name\":\"newproject\",\"container\":\"alpine\"}"
+                "{\"name\":\"newproject\",\"image\":\"alpine\"}"
             ],
             "options": {
                 //..
@@ -82,7 +82,7 @@ describe('Test basic example', function () {
         pollinate({
             "inputs": [
                 "https://github.com/howardroark/webapp.git",
-                "{\"name\":\"newproject\",\"container\":\"alpine\", \"keepHistory\":true}"
+                "{\"name\":\"newproject\",\"image\":\"alpine\", \"keepHistory\":true}"
             ],
             "options": {
                 //..
@@ -101,7 +101,7 @@ describe('Test basic example', function () {
         pollinate({
             "inputs": [
                 "https://github.com/howardroark/webapp.git",
-                "{\"name\":\"newproject\",\"container\":\"alpine\"}"
+                "{\"name\":\"newproject\",\"image\":\"alpine\"}"
             ],
             "options": {
                 //..
@@ -126,7 +126,7 @@ describe('Test basic example', function () {
             ],
             "options": {
                 "name": "test",
-                "container": "ubuntu"
+                "image": "ubuntu"
             }
         }, function (err, result) {
             assert.isNull(err);
@@ -138,7 +138,7 @@ describe('Test basic example', function () {
         pollinate({
             "inputs": [
                 "howardroark/webapp#test-branch",
-                "{\"name\":\"newproject\",\"container\":\"alpine\"}"
+                "{\"name\":\"newproject\",\"image\":\"alpine\"}"
             ],
             "options": {
                 //..
@@ -157,7 +157,7 @@ describe('Test basic example', function () {
         pollinate({
             "inputs": [
                 "https://github.com/howardroark/webapp.git#test-branch",
-                "{\"name\":\"newproject\",\"container\":\"alpine\"}"
+                "{\"name\":\"newproject\",\"image\":\"alpine\"}"
             ],
             "options": {
                 //..
