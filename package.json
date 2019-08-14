@@ -9,9 +9,11 @@
     "url": "https://github.com/howardroark"
   },
   "scripts": {
+    "postinstall": "npm audit fix",
+    "postuninstall": "npm audit fix",
     "test": "mocha tests/*",
-    "test-ci": "./node_modules/jslint/bin/jslint.js lib/**/*.js tests/**/*.js *.js && ./node_modules/istanbul/lib/cli.js cover ./node_modules/mocha/bin/_mocha tests/*",
-    "lint": "jslint '**/*.js'"
+    "test-ci": "npm run lint && nyc npm test",
+    "lint": "eslint '**/*.js'"
   },
   "main": "lib/index.js",
   "license": "Unlicence",
@@ -26,22 +28,20 @@
     "git"
   ],
   "engines": {
-    "node": ">=4"
+    "node": ">=8"
   },
   "dependencies": {
-    "async": "^2.1.4",
-    "cli-argparse": "^1.1.0",
-    "commander": "^2.9.0",
+    "async": "^3.1.0",
+    "cli-argparse": "^1.1.2",
+    "commander": "^3.0.0",
     "cpr": "^3.0.1",
-    "extend": "^3.0.0",
-    "globby": "^8.0.1",
-    "gunzip-maybe": "^1.3.1",
-    "hjson": "^3.1.1",
+    "extend": "^3.0.2",
+    "globby": "^10.0.1",
+    "hjson": "^3.1.2",
     "is-directory": "^0.3.1",
     "mkdirp": "^0.5.1",
     "mv": "^2.1.1",
-    "node-dir": "^0.1.11",
-    "nunjucks": "^3.0.0",
+    "nunjucks": "^3.2.0",
     "ospath": "^1.2.2",
     "prompt": "^1.0.0",
     "request": "^2.88.0",
@@ -58,10 +58,10 @@
     "lib"
   ],
   "devDependencies": {
-    "chai": "^3.5.0",
-    "coveralls": "^2.11.8",
-    "istanbul": "^0.4.2",
-    "jslint": "^0.10.3",
-    "mocha": "^2.4.5"
+    "chai": "^4.2.0",
+    "coveralls": "^3.0.6",
+    "eslint": "^6.1.0",
+    "mocha": "^6.2.0",
+    "nyc": "^14.1.1"
   }
 }

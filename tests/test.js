@@ -1,4 +1,5 @@
 /*global describe, it, afterEach*/
+
 'use strict';
 
 var pollinate = require('../lib/index.js');
@@ -99,6 +100,9 @@ describe('Test basic example', function () {
     });
     it('Git with json string and --keep-history', function (done) {
         pollinate({
+            "flags": {
+                "keep-history": true
+            },
             "inputs": [
                 "https://github.com/howardroark/webapp.git",
                 "{\"name\":\"newproject\",\"image\":\"alpine\"}"
@@ -106,9 +110,6 @@ describe('Test basic example', function () {
             "options": {
                 //..
             },
-            "flags": {
-                "keep-history": true
-            }
         }, function (err, result) {
             assert.isNull(err);
             assert.isObject(result);
@@ -121,12 +122,10 @@ describe('Test basic example', function () {
     });
     it('GitHub with options', function (done) {
         pollinate({
-            "inputs": [
-                "howardroark/webapp"
-            ],
+            "inputs": ["howardroark/webapp"],
             "options": {
+                "image": "ubuntu",
                 "name": "test",
-                "image": "ubuntu"
             }
         }, function (err, result) {
             assert.isNull(err);

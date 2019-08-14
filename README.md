@@ -235,10 +235,10 @@ You can supply custom [Nunjucks `filter`](https://mozilla.github.io/nunjucks/tem
 ##### `filters/markdown.js`
 
 ```js
-var markdownParser = function() { ... }
+const markdownParser = function() { ... }
 
 module.exports = function(markdownText) {
-  var html = markdownParser(markdownText)
+  const html = markdownParser(markdownText)
   return '<div class="markdown">'+html+'</div>'
 }
 ```
