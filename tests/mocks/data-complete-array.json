@@ -1,0 +1,21 @@
+{
+  "name": "data-complete",
+  "image": "debian",
+  "discard": [
+    "README.md"
+  ],
+  "parse": [
+    "Dockerfile",
+    "PROJECT-README"
+  ],
+  "move": [
+   { "PROJECT-README": "README.md" },
+   { "project-name": "{{ name }}.txt" },
+   { "project-name-dir": "{{ name }}" },
+   { "project-name-nested": "{{ name }}/{{ name }}/{{ name }}.txt" }
+  ],
+  "complete": [
+    "cd {{ name }}",
+    "pwd"
+  ]
+}

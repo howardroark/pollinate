@@ -292,4 +292,19 @@ describe('Test basic example', function () {
             rimraf('data-complete', done);
         });
     });
+    it('Local path without template.json, json file with complete array', function (done) {
+        pollinate({
+            "inputs": [
+                "./tests/mocks/template-no-data/",
+                "tests/mocks/data-complete-array.json"
+            ],
+            "options": {
+                //
+            }
+        }, function (err, result) {
+            assert.isNull(err);
+            assert.isObject(result);
+            rimraf('data-complete-array', done);
+        });
+    });
 });
