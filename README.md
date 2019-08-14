@@ -50,7 +50,7 @@ $ pollinate howardroark/webapp --name newproject --image alpine --description="A
 
 ###### `template.json` (optional)
 
-```
+```json
 {
   // Core schema
   "name": "webapp",
@@ -72,11 +72,11 @@ $ pollinate howardroark/webapp --name newproject --image alpine --description="A
 }
 ```
 
-You can omit any or all of `discard`, `parse` and `move`. 
+You can omit any or all of `discard`, `parse` and `move`.
 
 ###### `PROJECT-README`
 
-```
+```md
 # {{ name }}
 
 {{ description }}
@@ -84,13 +84,13 @@ You can omit any or all of `discard`, `parse` and `move`.
 
 ###### `Dockerfile`
 
-```
+```md
 FROM {{ image }}
 ```
 
 ##### The project data
 
-```
+```json
 {
   "name": "newproject",
   "image": "alpine",
@@ -100,7 +100,7 @@ FROM {{ image }}
 
 ##### The data after extending and parsing
 
-```
+```json
 {
   "name": "newproject",
   "parse": [
@@ -182,15 +182,31 @@ $ pollinate howardroark/webapp data.json --name=alternate --image=ubuntu
 ```
 
 You can specify a command to run on completion
-```
+```json
 {
   "complete": "git init {{ name }}"
 }
 ```
 
+Which can also be an array of commands
+```json
+{
+  "complete": [
+    "cd {{ name }}",
+    "git init",
+    "npm install",
+    "git add .",
+    "git commit -m 'initial commit'",
+    "git remote add origin https://github.com/{{ org }}/{{ name }}.git",
+    "git push -u origin master",
+    "code ."
+  ]
+}
+```
+
 You can supply user specific data each time with a `~/.pollen` defaults file
 
-```
+```json
 {
   "api_key":"secret"
 }
@@ -198,9 +214,9 @@ You can supply user specific data each time with a `~/.pollen` defaults file
 
 You can preserve the commit history from the skeleton project with the `--keep-history` CLI option or:
 
-```
+```json
 {
-  keepHistory: true
+  "keepHistory": true
 }
 ```
 
@@ -208,7 +224,7 @@ You can preserve the commit history from the skeleton project with the `--keep-h
 
 You can supply custom [Nunjucks `filter`](https://mozilla.github.io/nunjucks/templating.html#filters) functions (files must be included within template)
 
-```
+```json
 {
   "filters": {
     "markdown": "filters/markdown.js"
@@ -218,11 +234,11 @@ You can supply custom [Nunjucks `filter`](https://mozilla.github.io/nunjucks/tem
 
 ##### `filters/markdown.js`
 
-```
-var markdownParser = function() { ... }
+```js
+const markdownParser = function() { ... }
 
 module.exports = function(markdownText) {
-  var html = markdownParser(markdownText)
+  const html = markdownParser(markdownText)
   return '<div class="markdown">'+html+'</div>'
 }
 ```
@@ -231,12 +247,12 @@ module.exports = function(markdownText) {
 
 All `parse` paths are first passed to [globby](https://github.com/sindresorhus/globby)
 
-```
+```json
 {
   "parse": ["*"]
 }
 ```
-```
+```json
 {
   "parse": [
     "*",

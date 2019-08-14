@@ -1,11 +1,12 @@
 /*global describe, it, afterEach*/
+
 'use strict';
 
-var pollinate = require('../lib/index.js');
-var assert = require('chai').assert;
-var rimraf = require('rimraf');
-var fs = require('fs');
-var path = require('path');
+const pollinate = require('../lib/index.js');
+const assert = require('chai').assert;
+const rimraf = require('rimraf');
+const fs = require('fs');
+const path = require('path');
 
 describe('Test basic example', function () {
     afterEach(function (done) {
@@ -99,6 +100,9 @@ describe('Test basic example', function () {
     });
     it('Git with json string and --keep-history', function (done) {
         pollinate({
+            "flags": {
+                "keep-history": true
+            },
             "inputs": [
                 "https://github.com/howardroark/webapp.git",
                 "{\"name\":\"newproject\",\"image\":\"alpine\"}"
@@ -106,9 +110,6 @@ describe('Test basic example', function () {
             "options": {
                 //..
             },
-            "flags": {
-                "keep-history": true
-            }
         }, function (err, result) {
             assert.isNull(err);
             assert.isObject(result);
@@ -121,12 +122,10 @@ describe('Test basic example', function () {
     });
     it('GitHub with options', function (done) {
         pollinate({
-            "inputs": [
-                "howardroark/webapp"
-            ],
+            "inputs": ["howardroark/webapp"],
             "options": {
+                "image": "ubuntu",
                 "name": "test",
-                "image": "ubuntu"
             }
         }, function (err, result) {
             assert.isNull(err);
@@ -186,7 +185,7 @@ describe('Test basic example', function () {
             assert.isObject(result);
             fs.readFile(path.join('newproject', 'package.json'), 'utf8', function (err, data) {
                 assert.isNull(err);
-                var parsed = JSON.parse(data);
+                let parsed = JSON.parse(data);
                 assert.equal(parsed.name, 'newproject');
                 assert.equal(parsed.version, '1.0.0');
                 assert.isOk(parsed.dependencies);
@@ -290,6 +289,21 @@ describe('Test basic example', function () {
             assert.isNull(err);
             assert.isObject(result);
             rimraf('data-complete', done);
+        });
+    });
+    it('Local path without template.json, json file with complete array', function (done) {
+        pollinate({
+            "inputs": [
+                "./tests/mocks/template-no-data/",
+                "tests/mocks/data-complete-array.json"
+            ],
+            "options": {
+                //
+            }
+        }, function (err, result) {
+            assert.isNull(err);
+            assert.isObject(result);
+            rimraf('data-complete-array', done);
         });
     });
 });

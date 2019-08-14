@@ -29,3 +29,5 @@ test
 
 # NPM
 .npmrc
+
+.nyc_output/
