@@ -2,11 +2,11 @@
 
 'use strict';
 
-var pollinate = require('../lib/index.js');
-var assert = require('chai').assert;
-var rimraf = require('rimraf');
-var fs = require('fs');
-var path = require('path');
+const pollinate = require('../lib/index.js');
+const assert = require('chai').assert;
+const rimraf = require('rimraf');
+const fs = require('fs');
+const path = require('path');
 
 describe('Test basic example', function () {
     afterEach(function (done) {
@@ -185,7 +185,7 @@ describe('Test basic example', function () {
             assert.isObject(result);
             fs.readFile(path.join('newproject', 'package.json'), 'utf8', function (err, data) {
                 assert.isNull(err);
-                var parsed = JSON.parse(data);
+                let parsed = JSON.parse(data);
                 assert.equal(parsed.name, 'newproject');
                 assert.equal(parsed.version, '1.0.0');
                 assert.isOk(parsed.dependencies);

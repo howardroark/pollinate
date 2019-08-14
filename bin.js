@@ -11,11 +11,11 @@
 
 'use strict';
 
-var program = require('commander');
-var parse = require('cli-argparse');
-var pollinate = require('./lib/index.js');
+const program = require('commander');
+const parse = require('cli-argparse');
+const pollinate = require('./lib/index.js');
 
-var parsed = parse(process.argv, { camelcase: false });
+const parsed = parse(process.argv, { camelcase: false });
 
 program
     .version(require('./package.json').version)
